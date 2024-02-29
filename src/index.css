@@ -8,3 +8,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.bg-img {
+  background-image: url(./assets/bg-one.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.font {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.line-h{
+  line-height: 3rem;
+}

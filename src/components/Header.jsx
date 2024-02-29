@@ -7,7 +7,7 @@ const Header = () => {
   const myOld = year - 2008;
   return (
     <header className="w-full flex justify-center">
-      <div className="w-contain flex justify-between py-4 items-center">
+      <div className="w-contain flex justify-between py-6 items-center">
         <div>
           <p className="font-bold text-2xl">Mardonbek</p>
           <p className="font-bold text-2xl">Khamidof</p>
@@ -18,7 +18,7 @@ const Header = () => {
         </p>
         <a
           href="https://github.com/Khamidov-M/"
-          className="bg-black text-white py-3 px-4"
+          className="bg-black text-white py-3 px-4 rounded"
           target="_blanck"
         >
           Open my gitHub <i class="bx bxl-github"></i>
