@@ -10,7 +10,7 @@ const Header = () => {
       <div className="w-contain flex justify-between py-4 items-center">
         <div>
           <p className="font-bold text-2xl">Mardonbek</p>
-          <p className="font-bold text-2xl">Khamidov</p>
+          <p className="font-bold text-2xl">Khamidof</p>
         </div>
         <p className="text-center">
           front-end developer <br />
