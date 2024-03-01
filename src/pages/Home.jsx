@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "../components/Hero";
+import AboutMe from "../sections/AboutMe";
 
 const Home = () => {
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-contain">
-        <Hero />
-      </div>
+    <div className="space-y-10">
+      <Hero />
+      <AboutMe />
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Header = () => {
           className="bg-black text-white py-3 px-4 rounded"
           target="_blanck"
         >
-          Open my gitHub <i class="bx bxl-github"></i>
+          Open my gitHub <i className="bx bxl-github"></i>
         </a>
       </div>
     </header>
