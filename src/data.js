@@ -70,5 +70,6 @@ export const skills = [
     name: "Bootsrap",
     logo: bootstrap,
     info: "not often using",
+    star: 2,
   },
 ];
