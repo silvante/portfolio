@@ -73,3 +73,46 @@ export const skills = [
     star: 2,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    name: "Auto Poster",
+    info: "",
+    link: "https://auto-poster.netlify.app/",
+    gitHub: "https://github.com/Khamidov-M/auto-poster",
+    image: "",
+    texnos: ["#html", "#css", "#JavaScript", "#React", "#Tailwind"],
+    star: 5,
+  },
+  {
+    id: 2,
+    name: "CUser",
+    info: "",
+    link: "https://cuser-web.netlify.app/",
+    gitHub: "https://github.com/Khamidov-M/my-team",
+    image: "",
+    texnos: ["#html", "#css", "#JavaScript", "#React"],
+    star: 1,
+  },
+  {
+    id: 3,
+    name: "MCG",
+    info: "",
+    link: "https://mcg-game.netlify.app/",
+    gitHub: "https://github.com/Khamidov-M/memory-card-game",
+    image: "",
+    texnos: ["#html", "#css", "#JavaScript"],
+    star: 2,
+  },
+  {
+    id: 4,
+    name: "3d portfolio",
+    info: "",
+    link: undefined,
+    gitHub: "https://github.com/Khamidov-M/myPortfolio",
+    image: "",
+    texnos: ["#html", "#css", "#JavaScript", "react", "tailwind"],
+    star: 4,
+  },
+];
