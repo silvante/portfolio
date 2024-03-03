@@ -45,3 +45,12 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display: none;
 }
+
+.img {
+  transition: all 0.3s ease;
+  filter: grayscale(1);
+}
+
+.img:hover {
+  filter: grayscale(0);
+}
