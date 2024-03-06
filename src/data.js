@@ -82,7 +82,7 @@ export const projects = [
   {
     id: 1,
     name: "Auto Poster",
-    info: "",
+    info: "this web-site was creater for react exam and it took 20 days.",
     link: "https://auto-poster.netlify.app/",
     gitHub: "https://github.com/Khamidov-M/auto-poster",
     image: autoposter,
@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 2,
     name: "CUser",
-    info: "",
+    info: "CUser is simple react example for learning, it was created for fun.",
     link: "https://cuser-web.netlify.app/",
     gitHub: "https://github.com/Khamidov-M/my-team",
     image: cuser,
@@ -102,7 +102,7 @@ export const projects = [
   {
     id: 3,
     name: "MCG",
-    info: "",
+    info: "this game wes created when I was just learning begining of js, for fun.",
     link: "https://mcg-game.netlify.app/",
     gitHub: "https://github.com/Khamidov-M/memory-card-game",
     image: mcg,

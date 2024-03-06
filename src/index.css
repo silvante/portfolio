@@ -46,11 +46,14 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 
-.img {
-  transition: all 0.3s ease;
-  filter: grayscale(1);
+.linear-bottom{
+  background-image: linear-gradient(to bottom, black, transparent);
 }
 
-.img:hover {
-  filter: grayscale(0);
+.linear-top{
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+.s3{
+  transition: all .3s ease;
 }
