@@ -1,6 +1,8 @@
-import React from "react";
+import { TextField } from "@mui/material";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [show, setshow] = useState(false);
   return (
     <div className="w-full flex justify-center py-16">
       <div className="w-contain flex justify-center text-center">
@@ -10,6 +12,33 @@ const Contact = () => {
             <p>Want to know more or just chat? </p>
             <p>You are welcome!</p>
           </div>
+          <form
+            className={`transition-all${
+              !show ? "translate-y-[-100%]" : "translate-y-[0%]"
+            }`}
+          >
+            <div className=" w-96 mx-auto flex flex-col justify-start text-start mb-3">
+              <label>name</label>
+              <input
+                type="text"
+                className=" border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
+              />
+            </div>
+            <div className=" w-96 mx-auto flex flex-col text-start mb-3">
+              <label>email</label>
+              <input
+                type="email"
+                className="border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
+              />
+            </div>
+            <div className=" w-96 mx-auto flex flex-col text-start mb-3">
+              <label>meassange</label>
+              <textarea className="border-gray-400 h-32 resize-none bg-gray-200 border py-2 px-3 outline-none rounded-md"></textarea>
+            </div>
+            <button type="submit" className="bg-black text-white py-2 px-6 w-48 rounded-md mt-3">
+              Send meassange
+            </button>
+          </form>
           <br />
           <br />
           <div className="space-x-10 text-5xl flex">
