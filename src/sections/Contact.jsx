@@ -17,26 +17,44 @@ const Contact = () => {
           <br />
           <div className="space-x-10 text-5xl flex">
             <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a className="px-5 py-4 inline-block" href="https://t.me/Khamidov_devs/" target="_blank">
+              <a
+                className="px-5 py-4 inline-block"
+                href="https://t.me/Khamidov_devs/"
+                target="_blank"
+              >
                 <i className="bx bxl-telegram"></i>
               </a>
             </div>
             <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a className="px-5 py-4 inline-block" href="https://github.com/Khamidov-M/" target="_blank">
+              <a
+                className="px-5 py-4 inline-block"
+                href="https://github.com/Khamidov-M/"
+                target="_blank"
+              >
                 <i className="bx bxl-github"></i>
               </a>
             </div>
             <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a className="px-5 py-4 inline-block" href="https://yustas.netlify.app/" target="_blank">
+              <a
+                className="px-5 py-4 inline-block"
+                href="https://yustas.netlify.app/"
+                target="_blank"
+              >
                 <i className="bx bx-link-alt"></i>
               </a>
             </div>
             <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a className="px-5 py-4 inline-block" href="https://mardonbekkhamidov69@gmail.com" target="_blank">
+              <a
+                className="px-5 py-4 inline-block"
+                href="https://mardonbekkhamidov69@gmail.com"
+                target="_blank"
+              >
                 <i className="bx bx-envelope"></i>
               </a>
             </div>
           </div>
+          <p>my Phone</p>
+          <p className="text-xl font-bold">+998 (33) 303-82-82</p>
         </div>
       </div>
     </div>
