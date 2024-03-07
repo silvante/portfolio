@@ -10,14 +10,32 @@ const Contact = () => {
             <p>Want to know more or just chat? </p>
             <p>You are welcome!</p>
           </div>
-          <button className="bg-black text-white py-2 px-6 rounded-full">Send messange</button>
+          <button className="bg-black text-white py-2 px-6 rounded-full">
+            Send messange
+          </button>
           <br />
           <br />
-          <div className="space-x-10 text-5xl">
-            <a href="https://t.me/Khamidov_devs"><i className='bx bxl-telegram'></i></a>
-            <a href="#"><i className='bx bxl-github'></i></a>
-            <a href="#"><i className='bx bx-link-alt'></i></a>
-            <a href="#"><i className='bx bx-envelope'></i></a>
+          <div className="space-x-10 text-5xl flex">
+            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+              <a className="px-5 py-4 inline-block" href="https://t.me/Khamidov_devs/" target="_blank">
+                <i className="bx bxl-telegram"></i>
+              </a>
+            </div>
+            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+              <a className="px-5 py-4 inline-block" href="https://github.com/Khamidov-M/" target="_blank">
+                <i className="bx bxl-github"></i>
+              </a>
+            </div>
+            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+              <a className="px-5 py-4 inline-block" href="https://yustas.netlify.app/" target="_blank">
+                <i className="bx bx-link-alt"></i>
+              </a>
+            </div>
+            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+              <a className="px-5 py-4 inline-block" href="https://mardonbekkhamidov69@gmail.com" target="_blank">
+                <i className="bx bx-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
