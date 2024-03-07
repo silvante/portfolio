@@ -46,7 +46,7 @@ const Contact = () => {
       const chat_id = "6940337371";
 
       const telegramMessage = `
-      ${link} from your portfolio came new Ⓜ️assange\n\n massange send by:\n ${name}\n email of visitor: ${email}\n\n the massange was: ${massange}\n\n please check the massange and answer ✅
+      ${link} from your portfolio came new\n Ⓜ️assange\n\n massange send by: ${name}\n email of visitor: ${email}\n\n the massange was:\n ${massange}\n\n please check the massange and answer ✅
       `;
 
       axios
@@ -84,6 +84,7 @@ const Contact = () => {
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 type="text"
+                required
                 className=" border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
               />
             </div>
@@ -93,6 +94,7 @@ const Contact = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 type="email"
+                required
                 className="border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
               />
             </div>
@@ -101,6 +103,7 @@ const Contact = () => {
               <textarea
                 onChange={(e) => setmassange(e.target.value)}
                 value={massange}
+                required
                 className="border-gray-400 h-32 resize-none bg-gray-200 border py-2 px-3 outline-none rounded-md"
               ></textarea>
             </div>
