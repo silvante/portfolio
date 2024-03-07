@@ -2,7 +2,34 @@ import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import axios from "axios";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
+  const success = () => {
+    toast.success("your massange send", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+  const error = () => {
+    toast.error("please fill the form", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
   const [open, setOpen] = React.useState(0);
   const [link, setlink] = useState("https://yustas.netlify.app/");
   const [name, setName] = useState("");
@@ -12,9 +39,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name === "" || email === "" || massange === "") {
-      alert("malumotni toldiring");
+      error();
     } else {
-      alert("malumot yuborildi");
+      success();
       const telegram_bot_id = "7143795380:AAF4yahdu77vrEkyPDWW-Ck8P0gERrxn7bw";
       const chat_id = "6940337371";
 
@@ -127,6 +154,7 @@ const Contact = () => {
           <p className="text-xl font-bold">+998 (33) 303-82-82</p>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
