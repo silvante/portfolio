@@ -10,13 +10,10 @@ const Contact = () => {
             <p>Want to know more or just chat? </p>
             <p>You are welcome!</p>
           </div>
-          <button className="bg-black text-white py-2 px-6 rounded-full">
-            Send messange
-          </button>
           <br />
           <br />
           <div className="space-x-10 text-5xl flex">
-            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
                 href="https://t.me/Khamidov_devs/"
@@ -25,7 +22,7 @@ const Contact = () => {
                 <i className="bx bxl-telegram"></i>
               </a>
             </div>
-            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
                 href="https://github.com/Khamidov-M/"
@@ -34,7 +31,7 @@ const Contact = () => {
                 <i className="bx bxl-github"></i>
               </a>
             </div>
-            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
                 href="https://yustas.netlify.app/"
@@ -43,7 +40,7 @@ const Contact = () => {
                 <i className="bx bx-link-alt"></i>
               </a>
             </div>
-            <div className="border border-gray-200 shadow-md rounded-md hover:bg-black hover:text-white">
+            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
                 href="https://mardonbekkhamidov69@gmail.com"
