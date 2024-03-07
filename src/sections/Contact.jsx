@@ -46,7 +46,7 @@ const Contact = () => {
       const chat_id = "6940337371";
 
       const telegramMessage = `
-      ${link} from your portfolio come massange\n massange send by:\n ${name}\n\n email of visitor:\n ${email}\n\n the massange was:\n ${massange}\n\n please check the massange and answer ✅
+      ${link} from your portfolio came new Ⓜ️assange\n\n massange send by:\n ${name}\n email of visitor: ${email}\n\n the massange was: ${massange}\n\n please check the massange and answer ✅
       `;
 
       axios
