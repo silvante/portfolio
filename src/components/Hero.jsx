@@ -4,7 +4,7 @@ import pfp from "../assets/mardonbek.jpg"
 const Hero = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-contain bg-img rounded overflow-hidden">
+      <div className="w-[90%] lg:w-contain bg-img rounded overflow-hidden">
         <div className="w-full h-full py-10 px-10 bg-black/70 space-y-5 flex flex-col md:flex-row text-center justify-between items-center">
           <h1 className="text-white w-[100%] md:w-[50%] text-2xl font md:text-start sm:text-4xl sm:leading-tight">
             Your <span className="text-black bg-white">misstakes</span> will

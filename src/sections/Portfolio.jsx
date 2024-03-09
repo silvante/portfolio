@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   return (
     <div className="bg-gray-200 w-full flex justify-center py-16">
-      <div className="w-contain text-center space-y-10">
+      <div className="w-[90%] lg:w-contain text-center space-y-10">
         <div className="space-y-5">
           <h2 className="text-2xl font-bold">Portfolio</h2>
           <p>This is all my projects</p>
         </div>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((project) => {
             return (
               <div
@@ -25,7 +25,7 @@ const Portfolio = () => {
                 <div className="text-start space-y-2">
                   <p className="font-bold text-xl">{project.name}</p>
                   <p>{project.info}</p>
-                  <div className="space-x-3">
+                  <div className="space-x-3 flex flex-wrap">
                     {project.texnos.map((textno) => {
                       return (
                         <Link className="text-blue-500" key={textno}>
