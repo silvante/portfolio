@@ -70,15 +70,15 @@ const Contact = () => {
   };
   return (
     <div className="w-full flex justify-center py-16">
-      <div className="w-contain flex justify-center text-center">
+      <div className="w-[90%] lg:w-contain flex justify-center text-center">
         <div className="space-y-5">
           <h1 className="text-2xl font-bold">Contacts</h1>
           <div>
             <p>Want to know more or just chat? </p>
             <p>You are welcome!</p>
           </div>
-          <form onSubmit={handleSubmit}>
-            <div className=" w-96 mx-auto flex flex-col justify-start text-start mb-3">
+          <form onSubmit={handleSubmit} className="w-full sm:w-96 mx-auto">
+            <div className=" w-full mx-auto flex flex-col justify-start text-start mb-3">
               <label>name</label>
               <input
                 onChange={(e) => setName(e.target.value)}
@@ -88,7 +88,7 @@ const Contact = () => {
                 className=" border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
               />
             </div>
-            <div className=" w-96 mx-auto flex flex-col text-start mb-3">
+            <div className=" w-full mx-auto flex flex-col text-start mb-3">
               <label>email</label>
               <input
                 onChange={(e) => setEmail(e.target.value)}
@@ -98,7 +98,7 @@ const Contact = () => {
                 className="border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
               />
             </div>
-            <div className=" w-96 mx-auto flex flex-col text-start mb-3">
+            <div className=" w-full mx-auto flex flex-col text-start mb-3">
               <label>meassange</label>
               <textarea
                 onChange={(e) => setmassange(e.target.value)}
@@ -115,7 +115,7 @@ const Contact = () => {
             </button>
           </form>
           <p>sokial connections</p>
-          <div className="space-x-10 text-5xl flex">
+          <div className="text-5xl grid grid-cols-2 sm:grid-cols-4 gap-10">
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
