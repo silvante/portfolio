@@ -114,7 +114,7 @@ const Contact = () => {
               Send meassange
             </button>
           </form>
-          <p>sokial connections</p>
+          <p>social connections</p>
           <div className="text-5xl grid grid-cols-2 sm:grid-cols-4 gap-10">
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
