@@ -16,7 +16,10 @@ const AboutMe = () => {
             I'm studying at courses "Web developer tool react
             <br /> and reactNative" myself.
           </p>
-          <p>I'm Ready to implement excellent projects <br /> with wonderful people.</p>
+          <p>
+            I'm Ready to implement excellent projects <br /> with wonderful
+            people.
+          </p>
         </div>
       </div>
     </div>
