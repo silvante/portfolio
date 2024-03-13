@@ -21,7 +21,7 @@ export const counter = [
     title: "Learned languages",
   },
   {
-    id: 3,
+    id: 4,
     number: '25+',
     title: "All created Projects",
   },
