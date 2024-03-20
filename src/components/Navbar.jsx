@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-full px-3 hidden md:flex justify-center">
+    <nav className="w-full px-3 hidden md:flex justify-center" id="nav">
       <div className="w-contain flex justify-between py-5 border-b border-b-black">
-        <NavLink className={"font-bold"}>Home</NavLink>
-        <NavLink className={"font-bold"}>About me</NavLink>
-        <NavLink className={"font-bold"}>Skills</NavLink>
-        <NavLink className={"font-bold"}>Portfolio</NavLink>
-        <NavLink className={"font-bold"}>Contact</NavLink>
+        <a href="#nav" className={"font-bold"}>Home</a>
+        <a href="#about" className={"font-bold"}>About me</a>
+        <a href="#skills" className={"font-bold"}>Skills</a>
+        <a href="#portfolio" className={"font-bold"}>Portfolio</a>
+        <a href="#contact" className={"font-bold"}>Contact</a>
       </div>
     </nav>
   );

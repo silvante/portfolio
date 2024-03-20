@@ -5,7 +5,7 @@ import { Rating } from "@mui/material";
 const Skills = () => {
   const starColor = "black";
   return (
-    <div className="w-full flex justify-center py-10">
+    <div className="w-full flex justify-center py-10" id="skills">
       <div className="w-contain text-center space-y-5">
         <h2 className="text-2xl font-bold">Skills</h2>
         <p>I work in programs like</p>

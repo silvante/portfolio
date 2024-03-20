@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <div className="bg-gray-200 w-full flex justify-center py-16">
+    <div className="bg-gray-200 w-full flex justify-center py-16" id="portfolio">
       <div className="w-[90%] lg:w-contain text-center space-y-10">
         <div className="space-y-5">
           <h2 className="text-2xl font-bold">Portfolio</h2>

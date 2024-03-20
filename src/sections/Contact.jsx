@@ -69,7 +69,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full flex justify-center py-16">
+    <div className="w-full flex justify-center py-16" id="contact">
       <div className="w-[90%] lg:w-contain flex justify-center text-center">
         <div className="space-y-5">
           <h1 className="text-2xl font-bold">Contacts</h1>
