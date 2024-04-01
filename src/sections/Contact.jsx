@@ -153,8 +153,14 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <p>my Phone</p>
-          <p className="text-xl font-bold">+998 (33) 303-82-82</p>
+          <div>
+            <p>my Gamil</p>
+            <p className="text-xl font-bold">khamidov.can@gmail.com</p>
+          </div>
+          <div>
+            <p>my Phone</p>
+            <p className="text-xl font-bold">+998 (33) 303-82-82</p>
+          </div>
         </div>
       </div>
       <ToastContainer />
