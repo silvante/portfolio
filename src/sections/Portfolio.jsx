@@ -3,15 +3,19 @@ import { projects } from "../data";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  const proj = projects.sort((a, b) => b.star - a.star);
   return (
-    <div className="bg-gray-200 w-full flex justify-center py-16" id="portfolio">
+    <div
+      className="bg-gray-200 w-full flex justify-center py-16"
+      id="portfolio"
+    >
       <div className="w-[90%] lg:w-contain text-center space-y-10">
         <div className="space-y-5">
           <h2 className="text-2xl font-bold">Portfolio</h2>
           <p>This is all my projects</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {projects.map((project) => {
+          {proj.map((project) => {
             return (
               <div
                 key={project.id}

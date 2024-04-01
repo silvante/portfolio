@@ -8,9 +8,10 @@ import github from "./assets/github-icon-1.svg";
 import mui from "./assets/material-ui-1.svg";
 import react from "./assets/react.svg";
 
-import autoposter from "./assets/pr/autoposter.png"
-import cuser from "./assets/pr/cuser.png"
-import mcg from "./assets/pr/mcg.png"
+import autoposter from "./assets/pr/autoposter.png";
+import cuser from "./assets/pr/cuser.png";
+import mcg from "./assets/pr/mcg.png";
+import slivait from "./assets/pr/slivait.png";
 
 export const skills = [
   {
@@ -109,14 +110,14 @@ export const projects = [
     texnos: ["#html", "#css", "#JavaScript"],
     star: 2,
   },
-  // {
-  //   id: 4,
-  //   name: "3d portfolio",
-  //   info: "",
-  //   link: undefined,
-  //   gitHub: "https://github.com/Khamidov-M/myPortfolio",
-  //   image: "",
-  //   texnos: ["#html", "#css", "#JavaScript", "react", "tailwind"],
-  //   star: 4,
-  // },
+  {
+    id: 4,
+    name: "Slivait",
+    info: "This web was created for fun when I was learning node js and express (mern)",
+    link: "https://slivait.netlify.app/",
+    gitHub: "https://github.com/Khamidov-M/slivait",
+    image: slivait,
+    texnos: ["#html", "#css", "#JavaScript", "#react", "#tailwind"],
+    star: 4,
+  },
 ];
