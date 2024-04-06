@@ -30,7 +30,7 @@ const Header = () => {
           Open my gitHub <i className="bx bxl-github"></i>
         </a>
         <button className="text-4xl md:hidden" onClick={handleTogle}>
-          {showNav ? <i className="bx bx-x"></i> : <i className="bx bx-menu"></i>}
+          {showNav ? <i className="bx bx-x"></i> : <i className="bx bx-menu"></i>} 
         </button>
       </div>
       <div
