@@ -23,15 +23,15 @@ const Skills = () => {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <p>{skill.name}</p>
+                    <p className=" font-semibold">{skill.name}</p>
                   </div>
-                  <Rating
+                  {/* <Rating
                     name="read-only"
                     value={skill.star}
                     className=""
                     readOnly
                     style={{ color: starColor }}
-                  />
+                  /> */}
                 </div>
               </li>
             );
