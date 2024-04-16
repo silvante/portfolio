@@ -146,10 +146,10 @@ const Contact = () => {
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
-                href="https://mardonbekkhamidov69@gmail.com"
+                href="https://twitter.com/silnavt"
                 target="_blank"
               >
-                <i className="bx bx-envelope"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
             </div>
           </div>
