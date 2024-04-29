@@ -13,7 +13,8 @@ const Skills = () => {
           {skills.map((skill) => {
             return (
               <li className="w-[150px]" key={skill.id}>
-                <div className="h-[120px] flex items-center justify-center">
+                <div className="h-[120px] flex items-center justify-center relative">
+                  {skill.isLearning && <p className="bg-black text-white px-2 rounded-full absolute bottom-0">learning...</p>}
                   <img
                     src={skill.logo}
                     alt={skill.name}

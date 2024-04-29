@@ -7,6 +7,9 @@ import git from "./assets/git-icon.svg";
 import github from "./assets/github-icon-1.svg";
 import mui from "./assets/material-ui-1.svg";
 import react from "./assets/react.svg";
+import express from "./assets/express.svg";
+import mongodb from "./assets/mongodb.svg";
+import nodejs from "./assets/nadejs.svg";
 
 import autoposter from "./assets/pr/autoposter.png";
 import cuser from "./assets/pr/cuser.png";
@@ -20,6 +23,7 @@ export const skills = [
     logo: html,
     info: "using html 5",
     star: 5,
+    isLearning: false,
   },
   {
     id: 2,
@@ -27,6 +31,7 @@ export const skills = [
     logo: css,
     info: "using css 3",
     star: 4,
+    isLearning: false,
   },
   {
     id: 3,
@@ -34,6 +39,7 @@ export const skills = [
     logo: js,
     info: "programming language",
     star: 3,
+    isLearning: false,
   },
   {
     id: 4,
@@ -41,6 +47,7 @@ export const skills = [
     logo: react,
     info: "using lastest",
     star: 4,
+    isLearning: false,
   },
   {
     id: 5,
@@ -48,6 +55,7 @@ export const skills = [
     logo: tailwind,
     info: "css framework",
     star: 5,
+    isLearning: false,
   },
   {
     id: 6,
@@ -55,13 +63,15 @@ export const skills = [
     logo: git,
     info: "github halper",
     star: 4,
+    isLearning: true,
   },
   {
     id: 7,
     name: "GitHub",
     logo: github,
-    info: "nick: Khamidov-M",
+    info: "nick: silvante",
     star: 5,
+    isLearning: false,
   },
   {
     id: 8,
@@ -69,6 +79,7 @@ export const skills = [
     logo: mui,
     info: "Material ui",
     star: 3,
+    isLearning: false,
   },
   {
     id: 9,
@@ -76,6 +87,31 @@ export const skills = [
     logo: bootstrap,
     info: "not often using",
     star: 2,
+    isLearning: false,
+  },
+  {
+    id: 10,
+    name: "express",
+    logo: express,
+    info: "learned for mern",
+    star: 4,
+    isLearning: true,
+  },
+  {
+    id: 11,
+    name: "mongodb",
+    logo: mongodb,
+    info: "for database",
+    star: 3,
+    isLearning: true,
+  },
+  {
+    id: 12,
+    name: "node js",
+    logo: nodejs,
+    info: "for backend",
+    star: 3,
+    isLearning: true,
   },
 ];
 

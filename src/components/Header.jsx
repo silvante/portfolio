@@ -23,14 +23,18 @@ const Header = () => {
           {myOld} years old, Uzbek
         </p>
         <a
-          href="https://github.com/Khamidov-M/"
+          href="https://github.com/silvante/"
           className="bg-black text-white py-3 px-4 rounded hidden md:block"
           target="_blanck"
         >
           Open my gitHub <i className="bx bxl-github"></i>
         </a>
         <button className="text-4xl md:hidden" onClick={handleTogle}>
-          {showNav ? <i className="bx bx-x"></i> : <i className="bx bx-menu"></i>} 
+          {showNav ? (
+            <i className="bx bx-x"></i>
+          ) : (
+            <i className="bx bx-menu"></i>
+          )}
         </button>
       </div>
       <div
@@ -39,43 +43,43 @@ const Header = () => {
         }`}
       >
         <div className="w-[90%] flex flex-col">
-          <NavLink
+          <a href="#nav"
             className={
               "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
             }
           >
             Home
-          </NavLink>
-          <NavLink
+          </a>
+          <a href="#about"
             className={
               "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
             }
           >
             About me
-          </NavLink>
-          <NavLink
+          </a>
+          <a href="#skills"
             className={
               "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
             }
           >
             Skills
-          </NavLink>
-          <NavLink
+          </a>
+          <a href="#portfolio"
             className={
               "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
             }
           >
             Portfolio
-          </NavLink>
-          <NavLink
+          </a>
+          <a href="#contact"
             className={
               "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
             }
           >
             Contact
-          </NavLink>
+          </a>
           <a
-            href="https://github.com/Khamidov-M/"
+            href="https://github.com/silvante/"
             className="bg-black text-white py-3 px-4 rounded text-center mt-4 hover:bg-gray-900"
             target="_blanck"
           >
