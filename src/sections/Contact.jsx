@@ -128,7 +128,7 @@ const Contact = () => {
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
-                href="https://github.com/Khamidov-M/"
+                href="https://github.com/silvante/"
                 target="_blank"
               >
                 <i className="bx bxl-github"></i>
@@ -137,7 +137,7 @@ const Contact = () => {
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
-                href="https://yustas.netlify.app/"
+                href="https://silvante.netlify.app/"
                 target="_blank"
               >
                 <i className="bx bx-link-alt"></i>
