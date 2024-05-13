@@ -15,6 +15,7 @@ import autoposter from "./assets/pr/autoposter.png";
 import cuser from "./assets/pr/cuser.png";
 import mcg from "./assets/pr/mcg.png";
 import slivait from "./assets/pr/slivait.png";
+import apprest from "./assets/pr/apprest.png";
 
 export const skills = [
   {
@@ -155,5 +156,15 @@ export const projects = [
     image: slivait,
     texnos: ["#html", "#css", "#JavaScript", "#react", "#tailwind"],
     star: 4,
+  },
+  {
+    id: 5,
+    name: "Apprest (restfull)",
+    info: "I created this minimal functional App for learning mern stack",
+    link: "https://apprest.netlify.app/",
+    gitHub: "https://github.com/silvante/apprest",
+    image: apprest,
+    texnos: ["#client", "#backend"],
+    star: 5,
   },
 ];
