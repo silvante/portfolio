@@ -64,7 +64,7 @@ export const skills = [
     logo: git,
     info: "github halper",
     star: 4,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 7,
@@ -96,7 +96,7 @@ export const skills = [
     logo: express,
     info: "learned for mern",
     star: 4,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 11,
@@ -104,7 +104,7 @@ export const skills = [
     logo: mongodb,
     info: "for database",
     star: 3,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 12,
@@ -112,7 +112,7 @@ export const skills = [
     logo: nodejs,
     info: "for backend",
     star: 3,
-    isLearning: true,
+    isLearning: false,
   },
 ];
 
