@@ -119,7 +119,7 @@ const Contact = () => {
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
                 className="px-5 py-4 inline-block"
-                href="https://t.me/Khamidov_devs/"
+                href="https://t.me/newassembler"
                 target="_blank"
               >
                 <i className="bx bxl-telegram"></i>
