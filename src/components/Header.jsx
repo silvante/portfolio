@@ -19,7 +19,7 @@ const Header = () => {
           <p className="font-bold text-2xl">Khamidov</p>
         </div>
         <p className="text-center hidden md:block">
-          front-end developer <br />
+          Software engineer <br />
           {myOld} years old, Uzbek
         </p>
         <a

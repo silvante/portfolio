@@ -1,5 +1,6 @@
 import React from "react";
 import pfp from "../assets/mardonbek.jpg";
+import new_pfp from "../assets/1x1.jpg"
 import { projects } from "../data";
 import { skills } from "../data";
 const languages = 3;
@@ -41,7 +42,7 @@ const Hero = () => {
             </h1>
             <div className="w-[100%] md:w-[50%] flex justify-center md:justify-end">
               <img
-                src={pfp}
+                src={new_pfp}
                 alt="my image"
                 width={"300px"}
                 height={"300px"}
