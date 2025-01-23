@@ -39,13 +39,15 @@ const Portfolio = () => {
                     })}
                   </div>
                   <div className="w-full space-x-2">
-                    <a
-                      href={project.link}
-                      className="bg-black text-white rounded py-2 px-4 inline-block"
-                      target="_blanck"
-                    >
-                      Link <i className="bx bxl-netlify"></i>
-                    </a>
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        className="bg-black text-white rounded py-2 px-4 inline-block"
+                        target="_blanck"
+                      >
+                        Link <i className="bx bxl-netlify"></i>
+                      </a>
+                    )}
                     <a
                       href={project.gitHub}
                       className="bg-black text-white rounded py-2 px-4 inline-block"
