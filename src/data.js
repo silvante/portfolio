@@ -18,6 +18,8 @@ import autoposter from "./assets/pr/autoposter.png";
 import mcg from "./assets/pr/mcg.png";
 import slivait from "./assets/pr/slivait.png";
 import menemarket from "./assets/pr/menemarket.png"
+import pizza from "./assets/pr/pizza.png"
+import pizza_admin from "./assets/pr/pizza_admin.png"
 
 export const skills = [
   {
@@ -183,4 +185,25 @@ export const projects = [
     texnos: ["#node", "#express", "#jwt", "#mongodb"],
     star: 5,
   },
+  {
+    id: 5,
+    name: "Pizza (RehHot), client",
+    info: "Full stack project with ruby on rails admin is inside of project",
+    // link: "https://menemarket.netlify.app/",
+    gitHub: "https://github.com/silvante/pizza",
+    image: pizza,
+    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "Pizza (RehHot), admin",
+    info: "Full stack project with ruby on rails client is inside of project",
+    // link: "https://menemarket.netlify.app/",
+    gitHub: "https://github.com/silvante/pizza",
+    image: pizza_admin,
+    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
+    star: 5,
+  },
+  
 ];
