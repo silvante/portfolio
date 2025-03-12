@@ -1,6 +1,7 @@
 import React from "react";
 import pfp from "../assets/mardonbek.jpg";
-import new_pfp from "../assets/1x1.jpg"
+import hero_image from "../assets/logo_transparent.png";
+import new_pfp from "../assets/1x1.jpg";
 import { projects } from "../data";
 import { skills } from "../data";
 const languages = 3;
@@ -23,47 +24,50 @@ export const counter = [
   },
   {
     id: 4,
-    number: '25+',
+    number: "25+",
     title: "All created Projects",
   },
 ];
-
 
 const Hero = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="w-[90%] lg:w-contain space-y-5">
         <div className="bg-img rounded overflow-hidden">
-          <div className="w-full h-full py-10 px-10 bg-black/70 space-y-5 flex flex-col md:flex-row text-center justify-between items-center">
-            <h1 className="text-white w-[100%] md:w-[50%] text-2xl font md:text-start sm:text-4xl sm:leading-tight">
-              Your <span className="text-black bg-white">mistakes</span> will
-              grow you from zero to{" "}
-              <span className="text-black bg-white">hero</span>
-            </h1>
+          <div className="w-full h-full px-10 bg-black/70 space-y-5 flex flex-col md:flex-row text-center justify-between items-center">
+            <div className="text-white w-[100%] md:w-[50%] py-10 md:py-0">
+              <h1 className="text-2xl font md:text-start sm:text-4xl sm:leading-tight">
+                Your <span className="text-black bg-white">mistakes</span> will
+                grow you from zero to{" "}
+                <span className="text-black bg-white">hero.</span>
+              </h1>
+              <p className="mt-3 text-center md:text-start">
+                - Mardonbek Khamidov
+              </p>
+            </div>
             <div className="w-[100%] md:w-[50%] flex justify-center md:justify-end">
               <img
-                src={new_pfp}
+                src={hero_image}
                 alt="my image"
-                width={"300px"}
-                height={"300px"}
-                className="rounded-full border-2 border-white"
+                width={"400px"}
+                height={"400px"}
+                className=""
               />
             </div>
           </div>
         </div>
         <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
-          {
-            counter.map((e) =>{
-              return(
-                <div key={e.id} className=" space-y-3 px-5 transition-all bg-white border-2 border-gray-400 hover:scale-110 hover:bg-black hover:text-white hover:border-none text-center py-5">
-                  <span className="text-4xl font-bold">
-                    {e.number}
-                  </span>
-                  <p className="font-bold">{e.title}</p>
-                </div>
-              )
-            })
-          }
+          {counter.map((e) => {
+            return (
+              <div
+                key={e.id}
+                className=" space-y-3 px-5 transition-all bg-white border-2 border-gray-400 hover:scale-110 hover:bg-black hover:text-white hover:border-none text-center py-5"
+              >
+                <span className="text-4xl font-bold">{e.number}</span>
+                <p className="font-bold">{e.title}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
