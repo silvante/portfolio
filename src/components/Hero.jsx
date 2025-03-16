@@ -35,15 +35,22 @@ const Hero = () => {
       <div className="w-[90%] lg:w-contain space-y-5">
         <div className="bg-img rounded overflow-hidden">
           <div className="w-full h-full px-10 bg-black/70 space-y-5 flex flex-col md:flex-row text-center justify-between items-center">
-            <div className="text-white w-[100%] md:w-[50%] py-10 md:py-0">
+            <div className="text-white w-[100%] md:w-[50%] py-10 md:py-0 text-start flex flex-col items-start">
               <h1 className="text-2xl font md:text-start sm:text-4xl sm:leading-tight">
-                Your <span className="text-black bg-white">mistakes</span> will
-                grow you from zero to{" "}
-                <span className="text-black bg-white">hero.</span>
+                The best <span className="text-black bg-white">way to</span>{" "}
+                predict the <span className="text-black bg-white">future</span>{" "}
+                is to invent it.
               </h1>
-              <p className="mt-3 text-center md:text-start">
-                - Mardonbek Khamidov
+              <p className="my-5 text-center md:text-start">
+                - David Heinemeier Hansson
               </p>
+              <a
+                href="https://muhammdal1-fr-portfolio.netlify.app/"
+                target="_blanck"
+                className="bg-white px-4 py-2 text-black text-start flex items-center gap-3"
+              >
+                View Partner <i class='bx bx-right-arrow-alt'></i>
+              </a>
             </div>
             <div className="w-[100%] md:w-[50%] flex justify-center md:justify-end">
               <img
