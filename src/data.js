@@ -179,7 +179,7 @@ export const projects = [
     id: 4,
     name: "mene_market backend",
     info: "Backend part of mene market e-comm",
-    link: "https://menemarket.netlify.app/",
+    link: "https://menemarket.uz/",
     gitHub: "https://github.com/silvante/mene_market",
     image: menemarket,
     texnos: ["#node", "#express", "#jwt", "#mongodb"],
