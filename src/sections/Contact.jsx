@@ -114,7 +114,7 @@ const Contact = () => {
               Send meassange
             </button>
           </form>
-          <p>social connections</p>
+          <p>Social profiles</p>
           <div className="text-5xl grid grid-cols-2 sm:grid-cols-4 gap-10">
             <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
               <a
@@ -154,11 +154,11 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <p>my Gamil</p>
+            <p>My Gamil</p>
             <p className="text-xl font-bold">khamidov.ko@gmail.com</p>
           </div>
           <div>
-            <p>my Phone</p>
+            <p>My Phone</p>
             <p className="text-xl font-bold">+998 (33) 303-82-82</p>
           </div>
         </div>
