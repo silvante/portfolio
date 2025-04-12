@@ -1,7 +1,5 @@
 import React from "react";
-import pfp from "../assets/mardonbek.jpg";
 import hero_image from "../assets/logo_transparent.png";
-import new_pfp from "../assets/1x1.jpg";
 import { projects } from "../data";
 import { skills } from "../data";
 const languages = 3;
@@ -15,12 +13,12 @@ export const counter = [
   {
     id: 2,
     number: skills.length,
-    title: "all learned skills",
+    title: "All learned skills",
   },
   {
     id: 3,
     number: languages,
-    title: "Learned languages",
+    title: "Speaking languages",
   },
   {
     id: 4,
