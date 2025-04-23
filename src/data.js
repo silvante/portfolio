@@ -12,14 +12,16 @@ import mongodb from "./assets/mongodb.svg";
 import nodejs from "./assets/nadejs.svg";
 import rails from "./assets/rails.svg";
 import ruby from "./assets/Ruby_logo.png";
-import mysql from "./assets/mysql.svg"
+import mysql from "./assets/mysql.svg";
+import nest from "./assets/NestJS.svg";
+import next from "./assets/NextJS.svg"
 
 import autoposter from "./assets/pr/autoposter.png";
 import mcg from "./assets/pr/mcg.png";
 import slivait from "./assets/pr/slivait.png";
-import menemarket from "./assets/pr/menemarket.png"
-import pizza from "./assets/pr/pizza.png"
-import pizza_admin from "./assets/pr/pizza_admin.png"
+import menemarket from "./assets/pr/menemarket.png";
+import pizza from "./assets/pr/pizza.png";
+import pizza_admin from "./assets/pr/pizza_admin.png";
 
 export const skills = [
   {
@@ -124,7 +126,7 @@ export const skills = [
     logo: ruby,
     info: "for personal use",
     star: 3,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 14,
@@ -132,13 +134,29 @@ export const skills = [
     logo: rails,
     info: "for Full-stack",
     star: 5,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 15,
     name: "Mysql",
     logo: mysql,
     info: "with ORM",
+    star: 4,
+    isLearning: false,
+  },
+  {
+    id: 16,
+    name: "NestJs",
+    logo: nest,
+    info: "for backend",
+    star: 4,
+    isLearning: true,
+  },
+  {
+    id: 17,
+    name: "NextJs",
+    logo: next,
+    info: "for frontend",
     star: 4,
     isLearning: true,
   },
@@ -205,5 +223,4 @@ export const projects = [
     texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
     star: 5,
   },
-  
 ];
