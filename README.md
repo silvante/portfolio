@@ -5,10 +5,10 @@ This website showcases my projects, skills, and experience. Feel free to explore
 
 ## Preview
 
-![Homepage](github.com/silvante/portfolio/blob/main/src/assets/github/home.png?raw=true)  
+![Homepage](./src/assets/gihub/home.png)  
 *Homepage of my portfolio site*
 
-![Skills section](github.com/silvante/portfolio/blob/main/src/assets/github/skills.png?raw=true)  
+![Skills section](./src/assets/gihub/skills.png)  
 *Skills that I mastered*
 
 ## About
