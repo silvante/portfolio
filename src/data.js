@@ -27,6 +27,8 @@ import dust from "./assets/pr/dust.png";
 import stays from "./assets/pr/stays.png";
 import nuna from "./assets/pr/nuna.jpg";
 
+import pfp from "./assets/pfp.jpg"
+
 export const skills = [
   {
     id: 1,
@@ -266,3 +268,5 @@ export const projects = [
     star: 5,
   },
 ];
+
+export const profile_picture = pfp

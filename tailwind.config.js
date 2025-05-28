@@ -8,8 +8,8 @@ export default {
       width: {
         contain: '1100px'
       },
-      background: {
-        basic: "#0E2148"
+      color: {
+        basic: "#169976"
       }
     },
   },

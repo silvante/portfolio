@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { profile_picture } from "../data";
 
 const Header = () => {
   const date = new Date();
@@ -14,17 +14,18 @@ const Header = () => {
   return (
     <header className="w-full flex justify-center">
       <div className="w-[90%] lg:w-contain flex justify-between py-6 items-center">
-        <div>
-          <p className="font-bold text-2xl">Mardonbek</p>
-          <p className="font-bold text-2xl">Khamidov</p>
+        <div className="flex items-center gap-5">
+          <div className="overflow-hidden rounded-full bg-slate-200">
+            <img src={profile_picture} alt="my picture" className="" width={"80px"} height={"80px"} />
+          </div>
+          <div>
+            <p className="font-semibold">Mardonbek Khamidov</p>
+            <p className="opacity-70">{myOld} years old, Uzbek</p>
+          </div>
         </div>
-        <p className="text-center hidden md:block">
-          Software engineer <br />
-          {myOld} years old, Uzbek
-        </p>
         <a
           href="https://github.com/silvante/"
-          className="bg-black text-white py-3 px-4 rounded hidden md:block"
+          className="base_bg text-white py-3 px-4 rounded hidden md:block"
           target="_blanck"
         >
           Open my gitHub <i className="bx bxl-github"></i>
