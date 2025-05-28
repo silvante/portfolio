@@ -13,7 +13,7 @@ This website showcases my projects, skills, and experience. Feel free to explore
 
 ## About
 
-This site was built using [Your Tech Stack here, e.g., React, Node.js, or plain HTML/CSS].  
+This site was built using React js, JavaScript
 I designed it to highlight my skills and share my work with potential employers and collaborators.
 
 ---
