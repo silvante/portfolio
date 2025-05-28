@@ -8,11 +8,11 @@ import Contact from "../sections/Contact";
 const Home = () => {
   return (
     <div className="space-y-10">
-      <Hero />
+      {/* <Hero />
       <AboutMe />
       <Skills />
       <Portfolio />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 };

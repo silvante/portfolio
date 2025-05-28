@@ -6,7 +6,10 @@ export default {
   theme: {
     extend: {
       width: {
-        contain: '943px'
+        contain: '1100px'
+      },
+      background: {
+        basic: "#0E2148"
       }
     },
   },
