@@ -37,56 +37,6 @@ const Header = () => {
           )}
         </button>
       </div>
-      <div
-        className={`bg-white border-b-2 border-black absolute top-28 w-full p-3 flex justify-center md:hidden transition-all ${
-          !showNav ? "translate-x-[-100%]" : "translate-x-0"
-        }`}
-      >
-        <div className="w-[90%] flex flex-col">
-          <a href="#nav"
-            className={
-              "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
-            }
-          >
-            Home
-          </a>
-          <a href="#about"
-            className={
-              "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
-            }
-          >
-            About me
-          </a>
-          <a href="#skills"
-            className={
-              "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
-            }
-          >
-            Skills
-          </a>
-          <a href="#portfolio"
-            className={
-              "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
-            }
-          >
-            Portfolio
-          </a>
-          <a href="#contact"
-            className={
-              "font-bold py-4 hover:bg-slate-300 px-2 transition-all rounded"
-            }
-          >
-            Contact
-          </a>
-          <a
-            href="https://github.com/silvante/"
-            className="bg-black text-white py-3 px-4 rounded text-center mt-4 hover:bg-gray-900"
-            target="_blanck"
-          >
-            Open my gitHub <i className="bx bxl-github"></i>
-          </a>
-        </div>
-      </div>
     </header>
   );
 };
