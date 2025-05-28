@@ -19,6 +19,10 @@ body {
   background-color: #293f4c;
 }
 
+.main_bg {
+  background-color: #192125;
+}
+
 .bg-img {
   background-image: url(./assets/bg-one.jpg);
   background-position: center;

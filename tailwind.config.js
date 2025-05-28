@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       width: {
-        contain: '1100px'
+        contain: '1182px'
       },
       color: {
         basic: "#169976"
