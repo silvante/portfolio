@@ -24,6 +24,8 @@ import menemarket from "./assets/pr/menemarket.png";
 import pizza from "./assets/pr/pizza.png";
 import pizza_admin from "./assets/pr/pizza_admin.png";
 import dust from "./assets/pr/dust.png";
+import stays from "./assets/pr/stays.png";
+import nuna from "./assets/pr/nuna.jpg";
 
 export const skills = [
   {
@@ -215,6 +217,16 @@ export const projects = [
   },
   {
     id: 5,
+    name: "Nuna (Figma)",
+    info: "My mastermiece design of SM, can not share its link but can Sell it if you need not less then 499$",
+    // link: "not really",
+    // gitHub: "how",
+    image: nuna,
+    texnos: ["#figma", "#boxicons"],
+    star: 5,
+  },
+  {
+    id: 6,
     name: "Pizza (RehHot), client",
     info: "Full stack project with ruby on rails admin is inside of project",
     // link: "https://menemarket.netlify.app/",
@@ -224,42 +236,32 @@ export const projects = [
     star: 5,
   },
   {
-    id: 6,
-    name: "Pizza (RehHot), admin",
-    info: "Full stack project with ruby on rails client is inside of project",
-    // link: "https://menemarket.netlify.app/",
-    gitHub: "https://github.com/silvante/pizza",
-    image: pizza_admin,
-    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
-    star: 5,
-  },
-  {
-    id: 6,
-    name: "Pizza (RehHot), admin",
-    info: "Full stack project with ruby on rails client is inside of project",
-    // link: "https://menemarket.netlify.app/",
-    gitHub: "https://github.com/silvante/pizza",
-    image: pizza_admin,
-    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
-    star: 5,
-  },
-  {
     id: 7,
+    name: "Pizza (RehHot), admin",
+    info: "Full stack project with ruby on rails client is inside of project",
+    // link: "https://menemarket.netlify.app/",
+    gitHub: "https://github.com/silvante/pizza",
+    image: pizza_admin,
+    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
+    star: 5,
+  },
+  {
+    id: 8,
     name: "Dust (Figma)",
     info: "I have created full design of (desktop) Social media named Dust (idea is my own not copied) and can sell it if you need",
-    // link: "not really",
+    link: "https://www.figma.com/design/i8rA7VUzwSODLoG5JAMETo/the_dast?node-id=0-1&p=f&t=uhjPY9e5xi1lgEVs-0",
     // gitHub: "how",
     image: dust,
     texnos: ["#figma", "#boxicons"],
     star: 5,
   },
   {
-    id: 8,
+    id: 9,
     name: "Stays (Figma)",
     info: "I have created full design of (desktop) Social media named Stays (idea is my own not copied) site is for managing booking, I and can sell it if you need",
     // link: "not really",
     // gitHub: "how",
-    image: dust,
+    image: stays,
     texnos: ["#figma", "#boxicons"],
     star: 5,
   },
