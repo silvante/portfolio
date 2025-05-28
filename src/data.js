@@ -15,6 +15,7 @@ import ruby from "./assets/Ruby_logo.png";
 import mysql from "./assets/mysql.svg";
 import nest from "./assets/NestJS.svg";
 import next from "./assets/NextJS.svg"
+import figma from "./assets/Figma.svg.png"
 
 import autoposter from "./assets/pr/autoposter.png";
 import mcg from "./assets/pr/mcg.png";
@@ -22,6 +23,7 @@ import slivait from "./assets/pr/slivait.png";
 import menemarket from "./assets/pr/menemarket.png";
 import pizza from "./assets/pr/pizza.png";
 import pizza_admin from "./assets/pr/pizza_admin.png";
+import dust from "./assets/pr/dust.png";
 
 export const skills = [
   {
@@ -160,6 +162,14 @@ export const skills = [
     star: 4,
     isLearning: true,
   },
+  {
+    id: 18,
+    name: "Figma",
+    logo: figma,
+    info: "Using for designing",
+    star: 4,
+    isLearning: false,
+  },
 ];
 
 export const projects = [
@@ -221,6 +231,36 @@ export const projects = [
     gitHub: "https://github.com/silvante/pizza",
     image: pizza_admin,
     texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "Pizza (RehHot), admin",
+    info: "Full stack project with ruby on rails client is inside of project",
+    // link: "https://menemarket.netlify.app/",
+    gitHub: "https://github.com/silvante/pizza",
+    image: pizza_admin,
+    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
+    star: 5,
+  },
+  {
+    id: 7,
+    name: "Dust (Figma)",
+    info: "I have created full design of (desktop) Social media named Dust (idea is my own not copied) and can sell it if you need",
+    // link: "not really",
+    // gitHub: "how",
+    image: dust,
+    texnos: ["#figma", "#boxicons"],
+    star: 5,
+  },
+  {
+    id: 8,
+    name: "Stays (Figma)",
+    info: "I have created full design of (desktop) Social media named Stays (idea is my own not copied) site is for managing booking, I and can sell it if you need",
+    // link: "not really",
+    // gitHub: "how",
+    image: dust,
+    texnos: ["#figma", "#boxicons"],
     star: 5,
   },
 ];
