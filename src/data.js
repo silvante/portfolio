@@ -4,12 +4,12 @@ import js from "./assets/logo-javascript.svg";
 import bootstrap from "./assets/bootstrap-5-1.svg";
 import tailwind from "./assets/tailwindcss.svg";
 import git from "./assets/git-icon.svg";
-import github from "./assets/github-icon-1.svg";
+import github from "./assets/github.png";
 import mui from "./assets/material-ui-1.svg";
 import react from "./assets/react.svg";
 import express from "./assets/express.svg";
 import mongodb from "./assets/mongodb.svg";
-import nodejs from "./assets/nadejs.svg";
+import nodejs from "./assets/nodejs.svg";
 import rails from "./assets/rails.svg";
 import ruby from "./assets/Ruby_logo.png";
 import mysql from "./assets/mysql.svg";
@@ -156,7 +156,7 @@ export const skills = [
     logo: nest,
     info: "for backend",
     star: 4,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 17,
@@ -164,7 +164,7 @@ export const skills = [
     logo: next,
     info: "for frontend",
     star: 4,
-    isLearning: true,
+    isLearning: false,
   },
   {
     id: 18,
