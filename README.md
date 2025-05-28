@@ -5,10 +5,10 @@ This website showcases my projects, skills, and experience. Feel free to explore
 
 ## Preview
 
-![Homepage](./src/assets/gihub/home.png)  
+![Homepage](./src/assets/github/home.png)  
 *Homepage of my portfolio site*
 
-![Skills section](./src/assets/gihub/skills.png)  
+![Skills section](./src/assets/github/skills.png)  
 *Skills that I mastered*
 
 ## About
