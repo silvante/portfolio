@@ -13,10 +13,10 @@ const Banner = () => {
           enthusiast.
         </h1>
         <p>team - {team_members.length} members</p>
-        <div class="flex -space-x-4 rtl:space-x-reverse">
+        <div className="flex -space-x-4 rtl:space-x-reverse">
           {team_members.map((member) => {
             return (
-              <a id={member.id} href={member.link} target="_blanck">
+              <a key={member.id} href={member.link} target="_blanck">
                 <img
                   className='className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"'
                   src={member.img}
