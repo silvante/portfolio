@@ -1,6 +1,7 @@
 import React from "react";
 import Space from "../lottie/Space";
 import { team_members } from "../data";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -25,6 +26,7 @@ const Banner = () => {
             );
           })}
         </div>
+        <Link to={"/info"} className="px-4 py-2 bg-violet-600 rounded-xl inline-block mt-4">About me →</Link>
       </div>
       <div className="max-w-full md:max-w-[280px] lg:max-w-[380px]">
         <Space />

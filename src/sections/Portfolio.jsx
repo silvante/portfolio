@@ -20,7 +20,7 @@ const Portfolio = () => {
                 </div>
                 <div className="text-start space-y-2 p-5">
                   <p className="font-bold text-lg truncate">{project.name}</p>
-                  <p className="truncate">{project.info}</p>
+                  <p>{project.info}</p>
                   <div className="space-x-3 flex flex-wrap">
                     {project.texnos.map((textno) => {
                       return (
