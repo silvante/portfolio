@@ -5,7 +5,7 @@ const SkillCards = () => {
     <ul className="grid w-full gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {skills.map((skill) => {
         return (
-          <li className="body_bg w-full h-full flex justify-center items-center flex-col p-3 cursor-pointer rounded-xl border-4 border-transparent hover:border-green-400 transition-all" key={skill.id}>
+          <li className="body_bg w-full h-full flex justify-center items-center flex-col p-3 cursor-pointer rounded-xl border-4 border-transparent hover:border-violet-600 transition-all" key={skill.id}>
             <div className="flex items-center justify-center relative w-[80px] h-[80px]">
               {skill.isLearning && (
                 <p className="bg-black text-white px-2 rounded-full absolute bottom-0">

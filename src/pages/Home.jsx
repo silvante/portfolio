@@ -1,7 +1,12 @@
+import Banner from "../components/Banner";
+import Space from "../lottie/Space";
+import Articles from "../sections/Articles";
+
 const Home = () => {
   return (
     <div className="p-5">
-      <h1 className="text-2xl font-semibold">Home</h1>
+      <Banner />
+      <Articles />
     </div>
   );
 };

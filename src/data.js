@@ -27,7 +27,15 @@ import dust from "./assets/pr/dust.png";
 import stays from "./assets/pr/stays.png";
 import nuna from "./assets/pr/nuna.jpg";
 
+// lottie
+// import lottie from "./assets/lottie/space.lottie"
+
 import pfp from "./assets/pfp.jpg"
+
+// team
+import mardonbek from "./assets/team/mardonbek.jpg"
+import shukurillo from "./assets/team/shukurillo.jpg"
+import muhammadali from "./assets/team/muhammadali.jpg"
 
 export const skills = [
   {
@@ -271,4 +279,26 @@ export const projects = [
 
 export const profile_picture = pfp
 export const github_icon = github
+// export const lottie_animation = lottie
 export const my_github_link = "https://github.com/silvante/"
+
+export const team_members = [
+  {
+    id: "1",
+    name: "Mardonbek Khamidov",
+    link: "https://github.com/silvante",
+    img: mardonbek,
+  },
+  {
+    id: "2",
+    name: "Muhammadali Jamolov",
+    link: "https://github.com/Muhammadali-fr",
+    img: muhammadali
+  },
+  {
+    id: "3",
+    name: "Shukurillo Boburov",
+    link: "https://github.com/Boburov-Shukurillo",
+    img: shukurillo
+  }
+]
