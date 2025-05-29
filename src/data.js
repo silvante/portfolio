@@ -270,3 +270,5 @@ export const projects = [
 ];
 
 export const profile_picture = pfp
+export const github_icon = github
+export const my_github_link = "https://github.com/silvante/"

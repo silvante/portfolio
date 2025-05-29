@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { profile_picture } from "../data";
+import { github_icon, my_github_link, profile_picture } from "../data";
 
 const Header = () => {
   const date = new Date();
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="w-full flex justify-between py-6 items-center px-5">
       <div className="flex items-center gap-5">
-        <div className="overflow-hidden rounded-full bg-slate-200">
+        <div className="overflow-hidden rounded-full bg-slate-200 w-16 h-16">
           <img
             src={profile_picture}
             alt="my picture"
@@ -29,15 +29,15 @@ const Header = () => {
         </div>
       </div>
       <a
-        href="https://github.com/silvante/"
-        className="base_bg text-white py-3 px-4 rounded hidden md:block"
+        href={my_github_link}
+        className="text-white font-medium py-2 px-4 rounded hidden md:flex justify-center items-center gap-3"
         target="_blanck"
       >
-        Open my gitHub <i className="bx bxl-github"></i>
+        Open my gitHub <img src={github_icon} alt="Open my github" width={"48px"} />
       </a>
-      <button className="text-4xl md:hidden" onClick={handleTogle}>
-        {showNav ? <i className="bx bx-x"></i> : <i className="bx bx-menu"></i>}
-      </button>
+      <a href={my_github_link} target="_blanck" className="text-4xl md:hidden" onClick={handleTogle}>
+        <img src={github_icon} alt="Open my github" width={"48px"} />
+      </a>
     </header>
   );
 };

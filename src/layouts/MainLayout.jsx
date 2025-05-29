@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const MainLayout = () => {
   return (
@@ -10,6 +11,7 @@ const MainLayout = () => {
         <div className="w-full flex-1 main_bg rounded-tr-xl rounded-tl-xl">
           <Nav />
           <Outlet />
+          <Footer />
         </div>
       </div>
     </main>

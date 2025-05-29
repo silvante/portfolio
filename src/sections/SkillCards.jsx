@@ -2,7 +2,7 @@ import { skills } from "../data";
 
 const SkillCards = () => {
   return (
-    <ul className="grid w-full gap-10 grid-cols-5">
+    <ul className="grid w-full gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {skills.map((skill) => {
         return (
           <li className="body_bg w-full h-full flex justify-center items-center flex-col p-3 cursor-pointer rounded-xl border-4 border-transparent hover:border-green-400 transition-all" key={skill.id}>
