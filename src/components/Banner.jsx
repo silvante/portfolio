@@ -4,10 +4,10 @@ import { team_members } from "../data";
 
 const Banner = () => {
   return (
-    <div className="w-full flex justify-between p-5 gap-5">
+    <div className="w-full flex flex-col md:flex-row justify-between p-5 gap-5">
       <div className="flex-1 flex-col flex justify-center items-start gap-3">
         <p>Mardonbek Khamidov</p>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-2xl lg:text-4xl font-bold">
           A passionate Software Engineer, javaScript developer and Ruby
           enthusiast.
         </h1>
@@ -26,7 +26,7 @@ const Banner = () => {
           })}
         </div>
       </div>
-      <div className="max-w-[380px]">
+      <div className="max-w-full md:max-w-[280px] lg:max-w-[380px]">
         <Space />
       </div>
     </div>

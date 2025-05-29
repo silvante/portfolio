@@ -8,7 +8,7 @@ const Portfolio = () => {
     <div
       className="w-full"
     >
-        <div className="grid grid-cols-2 gap-5 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
           {proj.map((project) => {
             return (
               <div

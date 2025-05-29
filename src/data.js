@@ -277,7 +277,7 @@ export const projects = [
   },
 ];
 
-export const profile_picture = pfp
+export const profile_picture = mardonbek
 export const github_icon = github
 // export const lottie_animation = lottie
 export const my_github_link = "https://github.com/silvante/"

@@ -69,98 +69,52 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full flex justify-center py-16" id="contact">
+    <div className="w-full flex justify-center py-10" id="contact">
       <div className="w-[90%] lg:w-contain flex justify-center text-center">
         <div className="space-y-5">
-          <h1 className="text-2xl font-bold">Contacts</h1>
+          <h2 className="text-2xl font-semibold">Send Quick Message</h2>
           <div>
             <p>Want to know more or just chat? </p>
             <p>You are welcome!</p>
           </div>
           <form onSubmit={handleSubmit} className="w-full sm:w-96 mx-auto">
-            <div className=" w-full mx-auto flex flex-col justify-start text-start mb-3">
+            <div className="w-full mx-auto flex flex-col justify-start text-start mb-3">
               <label>name</label>
               <input
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 type="text"
                 required
-                className=" border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
+                className="py-3 px-3 outline-none rounded-xl border-none body_bg"
               />
             </div>
-            <div className=" w-full mx-auto flex flex-col text-start mb-3">
+            <div className="w-full mx-auto flex flex-col text-start mb-3">
               <label>email</label>
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 type="email"
                 required
-                className="border-gray-400 bg-gray-200 border py-3 px-3 outline-none rounded-md"
+                className="py-3 px-3 outline-none rounded-xl border-none body_bg"
               />
             </div>
-            <div className=" w-full mx-auto flex flex-col text-start mb-3">
+            <div className="w-full mx-auto flex flex-col text-start mb-3">
               <label>meassange</label>
               <textarea
                 onChange={(e) => setmassange(e.target.value)}
                 value={massange}
                 required
-                className="border-gray-400 h-32 resize-none bg-gray-200 border py-2 px-3 outline-none rounded-md"
+                className="py-2 px-3 outline-none rounded-xl border-none body_bg resize-none"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-black text-white py-2 px-6 rounded-full mt-2"
+              className="bg-violet-600 text-white py-2 px-6 rounded-full mt-2"
             >
               Send meassange
             </button>
           </form>
-          <p>Social profiles</p>
-          <div className="text-5xl grid grid-cols-2 sm:grid-cols-4 gap-10">
-            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a
-                className="px-5 py-4 inline-block"
-                href="https://t.me/newassembler"
-                target="_blank"
-              >
-                <i className="bx bxl-telegram"></i>
-              </a>
-            </div>
-            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a
-                className="px-5 py-4 inline-block"
-                href="https://github.com/silvante/"
-                target="_blank"
-              >
-                <i className="bx bxl-github"></i>
-              </a>
-            </div>
-            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a
-                className="px-5 py-4 inline-block"
-                href="https://silvante.netlify.app/"
-                target="_blank"
-              >
-                <i className="bx bx-link-alt"></i>
-              </a>
-            </div>
-            <div className="border border-gray-300 shadow-md rounded-md hover:bg-black hover:text-white">
-              <a
-                className="px-5 py-4 inline-block"
-                href="https://twitter.com/silnavt"
-                target="_blank"
-              >
-                <i className="bx bxl-twitter"></i>
-              </a>
-            </div>
-          </div>
-          <div>
-            <p>My Gamil</p>
-            <p className="text-xl font-bold">khamidov.ko@gmail.com</p>
-          </div>
-          <div>
-            <p>My Phone</p>
-            <p className="text-xl font-bold">+998 (33) 303-82-82</p>
-          </div>
+          <p>See you leter!</p>
         </div>
       </div>
       <ToastContainer />
