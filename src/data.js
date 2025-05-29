@@ -10,12 +10,12 @@ import react from "./assets/react.svg";
 import express from "./assets/express.svg";
 import mongodb from "./assets/mongodb.svg";
 import nodejs from "./assets/nodejs.svg";
-import rails from "./assets/rails.svg";
-import ruby from "./assets/Ruby_logo.png";
+import rails from "./assets/RubyonRails.svg";
+import ruby from "./assets/ruby.svg";
 import mysql from "./assets/mysql.svg";
 import nest from "./assets/NestJS.svg";
 import next from "./assets/NextJS.svg"
-import figma from "./assets/Figma.svg.png"
+import figma from "./assets/Figma.svg"
 
 import autoposter from "./assets/pr/autoposter.png";
 import mcg from "./assets/pr/mcg.png";
