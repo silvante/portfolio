@@ -6,29 +6,21 @@ const Portfolio = () => {
   const proj = projects.sort((a, b) => b.star - a.star);
   return (
     <div
-      className="bg-gray-200 w-full flex justify-center py-16"
-      id="portfolio"
+      className="w-full"
     >
-      <div className="w-[90%] lg:w-contain text-center space-y-10 flex flex-col items-center">
-        <div className="space-y-5">
-          <h2 className="text-2xl font-bold">Portfolio</h2>
-          <p>This is all my projects</p>
-        </div>
-        <div className="grid grid-cols-1 gap-5 w-full space-y-10 md:w-[650px]">
+        <div className="grid grid-cols-2 gap-5 w-full">
           {proj.map((project) => {
             return (
               <div
                 key={project.id}
-                className="s3 bg-white rounded-md shadow-md  space-y-5"
+                className="body_bg rounded-xl overflow-hidden shadow-md"
               >
-                <div className="rounded overflow-hidden relative shadow-md">
-                  {/* <div className="w-full py-4 absolute top-0 right-0 linear-bottom"></div> */}
-                  <img src={project.image} alt={project.name} />
-                  {/* <div className="w-full py-4 absolute bottom-0 left-0 linear-top"></div> */}
+                <div className="rounded overflow-hidden relative shadow-md aspect-video">
+                  <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
                 </div>
                 <div className="text-start space-y-2 p-5">
-                  <p className="font-bold text-xl">{project.name}</p>
-                  <p>{project.info}</p>
+                  <p className="font-bold text-lg truncate">{project.name}</p>
+                  <p className="truncate">{project.info}</p>
                   <div className="space-x-3 flex flex-wrap">
                     {project.texnos.map((textno) => {
                       return (
@@ -62,7 +54,6 @@ const Portfolio = () => {
               </div>
             );
           })}
-        </div>
       </div>
     </div>
   );
