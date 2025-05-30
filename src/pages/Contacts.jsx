@@ -32,7 +32,7 @@ const Contacts = () => {
             <a href={my_github_link} target="_blanck" className="flex items-center gap-3 py-2 px-4 bg-gray-950 rounded-md"><Github /> GitHub</a>
           </li>
           <li>
-            <a href="https://silvante.netlify.app" target="_blanck" className="flex items-center gap-3 py-2 px-4 bg-violet-600 rounded-md"><Link /> Portfolio</a>
+            <a href="https://xamidov.uz" target="_blanck" className="flex items-center gap-3 py-2 px-4 bg-violet-600 rounded-md"><Link /> Portfolio</a>
           </li>
           <li>
             <a href="https://www.youtube.com/@valentine_82" target="_blanck" className="flex items-center gap-3 py-2 px-4 bg-red-600 rounded-md"><Youtube /> Youtube</a>
