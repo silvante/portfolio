@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row justify-between p-5 gap-5">
+    <div className="w-full flex flex-col md:flex-row justify-between sm:p-5 gap-5">
       <div className="flex-1 flex-col flex justify-center items-start gap-3">
         <p>Mardonbek Khamidov</p>
         <h1 className="text-2xl lg:text-4xl font-bold">

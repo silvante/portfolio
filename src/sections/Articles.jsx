@@ -8,7 +8,7 @@ const Articles = () => {
     <div className="w-full">
       <div className="flex w-full justify-between items-center">
         <h2 className="text-2xl font-semibold">Articles</h2>
-        <p>My Ideas and phylosophy</p>
+        <p>short phylosophy</p>
       </div>
       <div className="w-full py-5 space-y-5">
         {re_articles.map((ar) => {
