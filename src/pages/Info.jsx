@@ -1,19 +1,12 @@
-import React from "react";
-import { profile_picture } from "../data";
-import { AtSign } from "lucide-react";
 import { Link } from "react-router-dom";
+import At from "../components/At";
 
 const Info = () => {
   return (
     <div className="p-5 space-y-5">
       <h1 className="text-2xl font-semibold">About me</h1>
-      <div className="flex flex-col items-start space-y-3">
-        <div className="p-1 rounded-md border border-gray-500 flex items-center cursor-pointer">
-          <div className="bg-violet-600 p-1 rounded-lg">
-            <AtSign />
-          </div>
-          <p className="px-3">mkf</p>
-        </div>
+      <At text="mkf" />
+      <div className="space-y-3">
         <h2 className="text-xl font-semibold">
           Hey there 👋, my name is Mardonbek.
         </h2>
