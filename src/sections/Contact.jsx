@@ -111,7 +111,7 @@ const Contact = () => {
               type="submit"
               className="bg-violet-600 text-white py-2 px-6 rounded-full mt-2"
             >
-              Send meassange
+              Send message
             </button>
           </form>
           <p>See you leter!</p>

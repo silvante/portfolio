@@ -20,7 +20,7 @@ const SkillCards = () => {
             </div>
             <div className="space-y-6">
               <div>
-                <p className=" font-semibold">{skill.name}</p>
+                <p className="truncate font-semibold text-center w-full">{skill.name}</p>
               </div>
             </div>
           </li>

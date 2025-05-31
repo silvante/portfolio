@@ -23,7 +23,7 @@ const Info = () => {
           I started backend with <span className="font-semibold">Ruby</span> programming language and it was my <span className="font-semibold">first love</span>. I really liked it and enjoyed using it as a tool that upgrades my productivity. Ruby really did its job with <span className="font-semibold">Ruby on Rails</span> it was really easy to use and had beautyful and elegance syntax that I really liked. But as I was only frontend developer, RoR was not easy for me. After failing to learn RoR I started learning <span className="font-semibold">NodeJs</span> for backend. Node js was more complicated then rails but I forced myself to learn it and that complexity helped me to level-up as a backend developer. I wanted to learn PHP at the time I wanted to learn Golang but non of them felt like Ruby. And I came back to Ruby on Rails, and this time was different I could understand every method of it and I was really interested to learn it and to do it my primary Tool. But just because there was no jobs for Ruby in my country Uzbekistan, and now I am using Ruby on Rails for only my side projects. 
         </p>
       </div>
-      <p>-- if you want to know about me more You can chack my <Link to={"/contacts"} className="text-violet-600 underline">contacts</Link></p>
+      <p>if you want to know about me more You can chack my <Link to={"/contacts"} className="text-violet-600 underline">contacts</Link></p>
       <Link to={"/skills"} className="px-4 py-2 bg-violet-600 rounded-xl inline-block">Skills →</Link>
     </div>
   );

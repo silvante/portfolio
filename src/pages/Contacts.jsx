@@ -15,15 +15,15 @@ const Contacts = () => {
         can answer from 9:00 to 22:00, thank you!
       </p>
       <div className="space-y-3">
-        <p>-- My Email</p>
+        <p>Email</p>
         <h3 className="text-xl font-semibold">info@xamidov.uz</h3>
       </div>
       <div className="space-y-3">
-        <p>-- My phone number</p>
+        <p>phone number</p>
         <h3 className="text-xl font-semibold">+998 (33) 303 82 82</h3>
       </div>
       <div className="space-y-3">
-        <p>-- My social account</p>
+        <p>social account</p>
         <ul className="flex flex-wrap gap-3">
           <li>
             <a href="https://t.me/newassembler" target="_blanck" className="flex items-center gap-3 py-2 px-4 bg-blue-500 rounded-md"><Send /> Telegram</a>

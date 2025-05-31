@@ -12,9 +12,9 @@ const Skills = () => {
         languages, some of them are just libraries, and some of them are
         full-stack, front-end and back-end only frameworks.
       </p>
-      <p>-- the cards</p>
+      <p>the cards</p>
       <SkillCards />
-      <p>-- next page</p>
+      <p>next page</p>
       <Link
         to={"/projects"}
         className="px-4 py-2 bg-violet-600 rounded-xl inline-block"
