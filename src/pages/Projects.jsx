@@ -12,9 +12,9 @@ const Projects = () => {
         Full-stack projects which had built with rails. Finally some projects
         are Figma designs.
       </p>
-      <p>-- all projects</p>
+      <p>all projects</p>
       <Portfolio />
-      <p>-- next page</p>
+      <p>next page</p>
       <Link
         to={"/contacts"}
         className="px-4 py-2 bg-violet-600 rounded-xl inline-block"

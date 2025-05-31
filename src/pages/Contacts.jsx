@@ -15,7 +15,7 @@ const Contacts = () => {
         can answer from 9:00 to 22:00, thank you!
       </p>
       <div className="space-y-3">
-        <p>Email</p>
+        <p>email</p>
         <h3 className="text-xl font-semibold">info@xamidov.uz</h3>
       </div>
       <div className="space-y-3">

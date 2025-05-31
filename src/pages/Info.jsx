@@ -10,21 +10,76 @@ const Info = () => {
         <h2 className="text-xl font-semibold">
           Hey there 👋, my name is Mardonbek.
         </h2>
-        <h3 className="text-lg font-medium"><span className="text-white/70">#</span> Overall</h3>
+        <h3 className="text-lg font-medium">
+          <span className="text-white/70">#</span> Overall
+        </h3>
         <p>
-          My full name is "Mardonbek Khamidov Farkhadovich" or simply <span className="font-semibold"> @mkf</span>, As a child I was really interested in Hardware Engineering, I separated a ton of technology into detail to see how they work under the hood. This interest was one of the main reasons of why I choiced Software Engineering as my primary job, because those two professions was pretty identical. When I went to my first cources of programming I realised that it was my only way in life, which I can truly enjoy going and get paid for. I got my fist laptop when I was about 8 years old and I really enjoyed using it, and I started to pay attention to Desctop apps and web apps. I really wanted to create something like YouTube which was really helpful to me to create some hand made stuff, even now one of my goals is to create Social Media.
+          My full name is "Mardonbek Khamidov Farkhadovich," or simply{" "}
+          <span className="font-semibold">@mkf</span>. As a child, I was really
+          interested in hardware engineering. I disassembled tons of devices to
+          see how they worked under the hood. This curiosity was one of the main
+          reasons I chose software engineering as my career—because the two
+          fields are quite similar. When I attended my first programming
+          courses, I realized it was the one path in life I could truly enjoy
+          and get paid for. I got my first laptop when I was about 8 years old,
+          and I loved using it. I became fascinated by desktop and web apps. I
+          really wanted to create something like YouTube, which helped me learn
+          to build things by hand. Even today, one of my biggest goals is to
+          create a social media platform.
         </p>
-        <h3 className="text-lg font-medium"><span className="text-white/70">#</span> Frontend Education</h3>
+        <h3 className="text-lg font-medium">
+          <span className="text-white/70">#</span> Frontend Education
+        </h3>
         <p>
-          First I started to go to programming cources in <span className="font-semibold">2022</span> but for some reasons I dropped it after two months of learning. Then in <span className="font-semibold">23rd february of 2023</span> I started learning Frontend development in Web King Education conter. After studying perfectly one year I ended Frontend courses in <span className="font-semibold">23rd February of 2024</span>, in that time, I was familiar with JavaScript and React js, also with bunch of npm libraries to use in development. I started to wonder and started continually asking myself "Can I create something that really matters" the answer was really interesting "Yeah, if I had someone that helps me to create backend of it"! I was quite unheppy to know it, because it was not my style of working, I wanted to create it myself, that is when I realised that I have to learn backend.
+          I first started programming courses in{" "}
+          <span className="font-semibold">2022</span>, but for some reasons, I
+          dropped out after two months. Then, on{" "}
+          <span className="font-semibold">February 23, 2023</span>, I began
+          learning frontend development at Web King Education Center. After
+          studying diligently for one year, I completed the course on{" "}
+          <span className="font-semibold">February 23, 2024</span>. During that
+          time, I became familiar with JavaScript, React.js, and many helpful
+          npm libraries. I kept asking myself, "Can I build something that
+          really matters?" The answer was interesting: "Yeah, if I had someone
+          to build the backend!" But that wasn't my preferred way of working—I
+          wanted to do it myself. That’s when I realized I needed to learn
+          backend development.
         </p>
-        <h3 className="text-lg font-medium"><span className="text-white/70">#</span> Backend Education</h3>
+        <h3 className="text-lg font-medium">
+          <span className="text-white/70">#</span> Backend Education
+        </h3>
         <p>
-          I started backend with <span className="font-semibold">Ruby</span> programming language and it was my <span className="font-semibold">first love</span>. I really liked it and enjoyed using it as a tool that upgrades my productivity. Ruby really did its job with <span className="font-semibold">Ruby on Rails</span> it was really easy to use and had beautyful and elegance syntax that I really liked. But as I was only frontend developer, RoR was not easy for me. After failing to learn RoR I started learning <span className="font-semibold">NodeJs</span> for backend. Node js was more complicated then rails but I forced myself to learn it and that complexity helped me to level-up as a backend developer. I wanted to learn PHP at the time I wanted to learn Golang but non of them felt like Ruby. And I came back to Ruby on Rails, and this time was different I could understand every method of it and I was really interested to learn it and to do it my primary Tool. But just because there was no jobs for Ruby in my country Uzbekistan, and now I am using Ruby on Rails for only my side projects. 
+          I began backend development with{" "}
+          <span className="font-semibold">Ruby</span>, and it was my{" "}
+          <span className="font-semibold">first love</span>. I loved how it
+          boosted my productivity. Ruby did its job beautifully with{" "}
+          <span className="font-semibold">Ruby on Rails</span>. It was easy to
+          use and had a beautiful, elegant syntax I really enjoyed. But as I was
+          mainly a frontend developer at the time, RoR wasn't easy for me. After
+          struggling with it, I switched to{" "}
+          <span className="font-semibold">Node.js</span>. It was more
+          complicated than Rails, but pushing through that complexity helped me
+          level up as a backend developer. I also considered learning PHP and
+          Golang, but none of them felt like Ruby. Eventually, I returned to
+          Ruby on Rails—and this time, everything clicked. I understood its
+          methods and really enjoyed working with it. Unfortunately, there are
+          few Ruby jobs in Uzbekistan, so now I use Ruby on Rails mainly for
+          side projects.
         </p>
       </div>
-      <p>if you want to know about me more You can chack my <Link to={"/contacts"} className="text-violet-600 underline">contacts</Link></p>
-      <Link to={"/skills"} className="px-4 py-2 bg-violet-600 rounded-xl inline-block">Skills →</Link>
+      <p>
+        If you want to know more about me, you can check my{" "}
+        <Link to={"/contacts"} className="text-violet-600 underline">
+          contacts
+        </Link>
+        .
+      </p>
+      <Link
+        to={"/skills"}
+        className="px-4 py-2 bg-violet-600 rounded-xl inline-block"
+      >
+        Skills →
+      </Link>
     </div>
   );
 };
