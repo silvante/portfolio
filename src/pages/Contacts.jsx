@@ -16,7 +16,7 @@ const Contacts = () => {
       </p>
       <div className="space-y-3">
         <p>-- My Email</p>
-        <h3 className="text-xl font-semibold">khamidov.ko@gmail.com</h3>
+        <h3 className="text-xl font-semibold">info@xamidov.uz</h3>
       </div>
       <div className="space-y-3">
         <p>-- My phone number</p>
