@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="p-5">
       <Banner />
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center mb-5">
         <a href={Resume} download className="flex gap-1 bg-violet-600 py-2 px-4 rounded-xl" >Download Resume <FileDown /></a>
       </div>
       <Articles />
