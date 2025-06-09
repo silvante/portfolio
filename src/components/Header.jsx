@@ -14,11 +14,10 @@ const Header = () => {
   return (
     <header className="w-full flex justify-between py-6 items-center px-5">
       <div className="flex items-center gap-2 sm:gap-5">
-        <div className="overflow-hidden rounded-full bg-slate-200 w-12 h-12 sm:w-16 sm:h-16">
+        <div className="overflow-hidden rounded-full bg-slate-200 w-12 h-12 sm:w-16 sm:h-16 border border-white">
           <img
             src={profile_picture}
             alt="my picture"
-            className=""
             width={"80px"}
             height={"80px"}
           />
