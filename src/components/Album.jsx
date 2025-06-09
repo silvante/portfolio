@@ -19,8 +19,6 @@ const Album = () => {
   };
 
   const all_loaded = loadedCount >= photos.length;
-  console.log(loadedCount);
-  
 
   return (
     <>
@@ -31,7 +29,7 @@ const Album = () => {
         </div>
       )}
 
-      <div className="w-full grid grid-cols-2 gap-3">
+      <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-2">
         <div>
           <img src={main_pic.photo} alt="main image" onLoad={handleImageLoad} />
         </div>
