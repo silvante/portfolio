@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import At from "../components/At";
+import Album from "../components/Album";
 
 const Info = () => {
   return (
     <div className="p-5 space-y-5">
+      <h1 className="text-2xl font-semibold">Album</h1>
+      <Album />
       <h1 className="text-2xl font-semibold">About me</h1>
       <At text="mkf" />
       <div className="space-y-3">
