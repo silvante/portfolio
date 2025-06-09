@@ -29,24 +29,30 @@ const Album = () => {
         </div>
       )}
 
-      <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-2">
-        <div>
-          <img src={main_pic.photo} alt="main image" onLoad={handleImageLoad} />
+      {all_loaded && (
+        <div className="w-full grid grid-cols-1 gap-3 md:grid-cols-2">
+          <div>
+            <img
+              src={main_pic.photo}
+              alt="main image"
+              onLoad={handleImageLoad}
+            />
+          </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-3">
+            {filtered_photos.map((p) => {
+              return (
+                <button onClick={() => setIndex(p.id)} key={p.id}>
+                  <img
+                    src={p.photo}
+                    alt={`my image ${p.id}`}
+                    onLoad={handleImageLoad}
+                  />
+                </button>
+              );
+            })}
+          </div>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-3">
-          {filtered_photos.map((p) => {
-            return (
-              <button onClick={() => setIndex(p.id)} key={p.id}>
-                <img
-                  src={p.photo}
-                  alt={`my image ${p.id}`}
-                  onLoad={handleImageLoad}
-                />
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      )}
     </>
   );
 };
