@@ -20,7 +20,7 @@ const Contacts = () => {
       </div>
       <div className="space-y-3">
         <p>phone number</p>
-        <h3 className="text-xl font-semibold">+998 (33) 303 82 82</h3>
+        <h3 className="text-xl font-semibold">+998 (95) 075 00 54</h3>
       </div>
       <div className="space-y-3">
         <p>social account</p>
