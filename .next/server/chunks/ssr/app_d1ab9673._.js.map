@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///home/xamidov/devs/react/portfolio/app/lottie/Space.jsx"],"sourcesContent":["\"use client\"\r\nimport Lottie from \"lottie-react\";\r\nimport Space_animation from \"../assets/lottie/space.json\";\r\n\r\nexport default function Space() {\r\n  return <Lottie animationData={Space_animation} />;\r\n}\r\n"],"names":[],"mappings":";;;;AACA;AAAA;AACA;AAFA;;;;AAIe,SAAS;IACtB,qBAAO,8OAAC,uKAAA,CAAA,UAAM;QAAC,eAAe,wGAAA,CAAA,UAAe;;;;;;AAC/C","debugId":null}}]
+}

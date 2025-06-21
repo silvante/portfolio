@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xamidov.uz
+
+# Sitemaps
+Sitemap: https://xamidov.uz/sitemap.xml
