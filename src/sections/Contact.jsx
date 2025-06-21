@@ -42,8 +42,8 @@ const Contact = () => {
       error();
     } else {
       success();
-      const telegram_bot_id = "7143795380:AAF4yahdu77vrEkyPDWW-Ck8P0gERrxn7bw";
-      const chat_id = "6940337371";
+      const telegram_bot_id = "8196784580:AAGgjaKGPMvJi9EzNzbX7Kqena2NTSmhKdc";
+      const chat_id = "7734275555";
 
       const telegramMessage = `
       ${link} from your portfolio came new\n Ⓜ️assange\n\n massange send by: ${name}\n email of visitor: ${email}\n\n the massange was:\n ${massange}\n\n please check the massange and answer ✅
