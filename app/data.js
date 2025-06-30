@@ -26,6 +26,7 @@ import pizza_admin from "./assets/pr/pizza_admin.png";
 import dust from "./assets/pr/dust.png";
 import stays from "./assets/pr/stays.png";
 import nuna from "./assets/pr/nuna.jpg";
+import kickstart from "./assets/pr/kickstart.png";
 
 // lottie
 // import lottie from "./assets/lottie/space.lottie"
@@ -241,7 +242,7 @@ export const projects = [
     // gitHub: "how",
     image: nuna,
     texnos: ["#figma", "#boxicons"],
-    star: 5,
+    star: 4,
   },
   {
     id: 6,
@@ -251,7 +252,7 @@ export const projects = [
     gitHub: "https://github.com/silvante/pizza",
     image: pizza,
     texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
-    star: 5,
+    star: 4,
   },
   {
     id: 7,
@@ -271,7 +272,7 @@ export const projects = [
     // gitHub: "how",
     image: dust,
     texnos: ["#figma", "#boxicons"],
-    star: 5,
+    star: 4,
   },
   {
     id: 9,
@@ -281,6 +282,16 @@ export const projects = [
     // gitHub: "how",
     image: stays,
     texnos: ["#figma", "#boxicons"],
+    star: 4,
+  },
+  {
+    id: 10,
+    name: "Kickstart JS",
+    info: "Nest and Next js template with pre built authentication and ton of configirations you can use it to generate new template for your next project",
+    link: "https://kickstartjs.uz",
+    gitHub: "https://github.com/silvante/kickstart_js",
+    image: kickstart,
+    texnos: ["#nest_js", "#nexts_js", "#passport_js", "#BullMQ", "#npm"],
     star: 5,
   },
 ];
