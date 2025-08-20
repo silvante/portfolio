@@ -1,7 +1,9 @@
 import Contact from "@/app/(sections)/Contact";
 import { my_github_link } from "@/app/data";
-import { Github, Link, Send, Youtube } from "lucide-react";
+import { Github, Send, Youtube } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
+import BlueSky from "@/app/assets/bluesky.svg";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Contacts",
@@ -119,11 +121,12 @@ export default function Contacts() {
           </li>
           <li>
             <a
-              href="https://xamidov.uz"
+              href="https://bsky.app/profile/newassembler.bsky.social"
               target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-violet-600 rounded-md"
+              className="flex items-center gap-3 py-2 px-4 bg-[#1185fe] rounded-md"
             >
-              <Link /> Portfolio
+              <Image src={BlueSky} width={24} height={24} alt="bluesky" />{" "}
+              Bluesky
             </a>
           </li>
           <li>
