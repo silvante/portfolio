@@ -84,7 +84,7 @@ export default function Contacts() {
     <div className="p-5 space-y-5">
       <h1 className="text-2xl font-semibold">Contacts</h1>
       <p>
-        As a person who does not like jokes, I remember you, please whire or
+        As a person who does not like jokes, I remind you, please whire or
         call to me only about something important, non-important messages and
         call will be ignored or even spammed. thank you for understanding and
         those are all of my social contacts, phone number and email, mostly I
