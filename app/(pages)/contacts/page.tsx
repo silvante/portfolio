@@ -121,7 +121,7 @@ export default function Contacts() {
           </li>
           <li>
             <a
-              href="https://bsky.app/profile/newassembler.bsky.social"
+              href="https://bsky.app/profile/xamidov.bsky.social"
               target="_blanck"
               className="flex items-center gap-3 py-2 px-4 bg-[#1185fe] rounded-md"
             >
