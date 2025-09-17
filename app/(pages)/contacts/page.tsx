@@ -84,11 +84,11 @@ export default function Contacts() {
     <div className="p-5 space-y-5">
       <h1 className="text-2xl font-semibold">Contacts</h1>
       <p>
-        As a person who does not like jokes, I remind you, please whire or
-        call to me only about something important, non-important messages and
-        call will be ignored or even spammed. thank you for understanding and
-        those are all of my social contacts, phone number and email, mostly I
-        can answer from 9:00 to 22:00, thank you!
+        As a person who does not like jokes, I remind you, please whire or call
+        to me only about something important, non-important messages and call
+        will be ignored or even spammed. thank you for understanding and those
+        are all of my social contacts, phone number and email, mostly I can
+        answer from 9:00 to 22:00, thank you!
       </p>
       <div className="space-y-3">
         <p>email</p>
@@ -103,7 +103,7 @@ export default function Contacts() {
         <ul className="flex flex-wrap gap-3">
           <li>
             <a
-              href="https://t.me/newassembler"
+              href="https://t.me/vanilla_valentine"
               target="_blanck"
               className="flex items-center gap-3 py-2 px-4 bg-blue-500 rounded-md"
             >
