@@ -16,6 +16,8 @@ import mysql from "./assets/mysql.svg";
 import nest from "./assets/NestJS.svg";
 import next from "./assets/NextJS.svg";
 import figma from "./assets/Figma.svg";
+import prisma from "./assets/prisma.svg";
+import typescript from "./assets/typescript.svg";
 
 import autoposter from "./assets/pr/autoposter.png";
 import mcg from "./assets/pr/mcg.png";
@@ -30,8 +32,6 @@ import kickstart from "./assets/pr/kickstart.png";
 
 // lottie
 // import lottie from "./assets/lottie/space.lottie"
-
-import pfp from "./assets/pfp.jpg";
 
 // team
 import mardonbek from "./assets/team/mardonbek.jpg";
@@ -188,6 +188,22 @@ export const skills = [
     name: "Figma",
     logo: figma,
     info: "Using for designing",
+    star: 4,
+    isLearning: false,
+  },
+  {
+    id: 19,
+    name: "Prisma",
+    logo: prisma,
+    info: "Using as ORM",
+    star: 4,
+    isLearning: false,
+  },
+  {
+    id: 20,
+    name: "TypeScript",
+    logo: typescript,
+    info: "programming language",
     star: 4,
     isLearning: false,
   },
