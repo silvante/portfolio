@@ -4,6 +4,7 @@ import { Github, Send, Youtube } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import BlueSky from "@/app/assets/bluesky.svg";
+import Pinterest from "@/app/assets/Pinterest.svg";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Contacts",
@@ -136,6 +137,16 @@ export default function Contacts() {
               className="flex items-center gap-3 py-2 px-4 bg-red-600 rounded-md"
             >
               <Youtube /> Youtube
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.pinterest.com/vanillavanetine/_created/"
+              target="_blanck"
+              className="flex items-center gap-3 py-2 px-4 bg-[#bd081c] rounded-md"
+            >
+              <Image src={Pinterest} width={24} height={24} alt="bluesky" />{" "}
+              Pinterest
             </a>
           </li>
         </ul>
