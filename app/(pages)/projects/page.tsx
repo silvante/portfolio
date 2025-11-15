@@ -89,7 +89,7 @@ export default function Projects() {
       </p>
       <At text="Project cards" />
       <Portfolio />
-      <p>next page</p>
+      <p>Next page</p>
       <Link
         href={"/contacts"}
         className="px-4 py-2 bg-violet-600 rounded-xl inline-block"

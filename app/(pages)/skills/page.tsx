@@ -89,7 +89,7 @@ export default function Skills() {
       </p>
       <At text="Skill cards" />
       <SkillCards />
-      <p>next page</p>
+      <p>Next page</p>
       <Link
         href={"/projects"}
         className="px-4 py-2 bg-violet-600 rounded-xl inline-block"

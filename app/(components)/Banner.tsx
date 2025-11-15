@@ -12,7 +12,7 @@ export default function Banner() {
           A passionate Software Engineer, javaScript developer and Ruby
           enthusiast.
         </h1>
-        <p>team - {team_members.length} members</p>
+        <p>Team - {team_members.length} members</p>
         <div className="flex -space-x-4 rtl:space-x-reverse">
           {team_members.map((member) => {
             return (
