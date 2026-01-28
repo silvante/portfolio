@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="w-full md:flex justify-between items-center">
         <p className="text-white/70">
           original portfolio{" "}
-          <span className="text-white">@built without AI</span>
+          <span className="text-white">www.xamidov.uz</span>
         </p>
         <p className="text-white/70">
           email:{" "}
