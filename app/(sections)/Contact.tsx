@@ -22,8 +22,8 @@ export default function Contact() {
       error();
     } else {
       success();
-      const telegram_bot_id = "8196784580:AAGgjaKGPMvJi9EzNzbX7Kqena2NTSmhKdc";
-      const chat_id = "7734275555";
+      const telegram_bot_id = process.env.TELEGRAM_BOT_ID;
+      const chat_id = process.env.TELEGRAM_CHAT_ID;
 
       const telegramMessage = `
       ${link} from your portfolio came new\n Ⓜ️assange\n\n massange send by: ${name}\n email of visitor: ${email}\n\n the massange was:\n ${massange}\n\n please check the massange and answer ✅
