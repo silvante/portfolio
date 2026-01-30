@@ -10,7 +10,7 @@ export default function Portfolio() {
           return (
             <div
               key={project.id}
-              className="body_bg rounded-xl overflow-hidden shadow-md"
+              className="body_bg rounded-xl overflow-hidden shadow-md border border-gray-700"
             >
               <div className="rounded overflow-hidden relative shadow-md aspect-video">
                 <Image
