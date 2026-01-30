@@ -42,3 +42,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+button {
+  cursor: pointer;
+}
