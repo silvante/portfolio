@@ -62,7 +62,7 @@ export default function Contact() {
                 value={name}
                 type="text"
                 required
-                className="py-3 px-3 outline-none rounded-xl border-none body_bg"
+                className="py-3 px-3 outline-none rounded-xl border border-gray-700 body_bg"
               />
             </div>
             <div className="w-full mx-auto flex flex-col text-start mb-3">
@@ -72,7 +72,7 @@ export default function Contact() {
                 value={email}
                 type="email"
                 required
-                className="py-3 px-3 outline-none rounded-xl border-none body_bg"
+                className="py-3 px-3 outline-none rounded-xl border border-gray-700 body_bg"
               />
             </div>
             <div className="w-full mx-auto flex flex-col text-start mb-3">
@@ -81,7 +81,7 @@ export default function Contact() {
                 onChange={(e) => setmassange(e.target.value)}
                 value={massange}
                 required
-                className="py-2 px-3 outline-none rounded-xl border-none body_bg resize-none"
+                className="py-2 px-3 outline-none rounded-xl border border-gray-700 body_bg resize-none h-48"
               ></textarea>
             </div>
             <button

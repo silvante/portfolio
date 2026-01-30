@@ -35,7 +35,7 @@ export default function Portfolio() {
                   {project.link && (
                     <a
                       href={project.link}
-                      className="bg-black text-white rounded py-2 px-4 inline-block"
+                      className="bg-black text-white rounded py-2 px-4 inline-block border border-gray-700"
                       target="_blanck"
                     >
                       Link <i className="bx bxl-netlify"></i>
@@ -44,7 +44,7 @@ export default function Portfolio() {
                   {project.gitHub && (
                     <a
                       href={project.gitHub}
-                      className="bg-black text-white rounded py-2 px-4 inline-block"
+                      className="bg-black text-white rounded py-2 px-4 inline-block border border-gray-700"
                       target="_black"
                     >
                       Github <i className="bx bxl-github"></i>
