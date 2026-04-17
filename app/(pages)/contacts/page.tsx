@@ -151,7 +151,7 @@ export default function Contacts() {
           </li>
         </ul>
       </div>
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
