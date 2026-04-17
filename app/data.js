@@ -54,6 +54,7 @@ export const skills = [
     info: "using html 5",
     star: 5,
     isLearning: false,
+    link: "https://en.wikipedia.org/wiki/HTML",
   },
   {
     id: 2,
@@ -62,6 +63,7 @@ export const skills = [
     info: "using css 3",
     star: 4,
     isLearning: false,
+    link: "https://en.wikipedia.org/wiki/CSS",
   },
   {
     id: 3,
@@ -70,6 +72,7 @@ export const skills = [
     info: "programming language",
     star: 3,
     isLearning: false,
+    link: "https://www.javascript.com/",
   },
   {
     id: 4,
@@ -78,6 +81,7 @@ export const skills = [
     info: "using lastest",
     star: 4,
     isLearning: false,
+    link: "https://react.dev/",
   },
   {
     id: 5,
@@ -86,6 +90,7 @@ export const skills = [
     info: "css framework",
     star: 5,
     isLearning: false,
+    link: "https://tailwindcss.com/",
   },
   {
     id: 6,
@@ -94,6 +99,7 @@ export const skills = [
     info: "github halper",
     star: 4,
     isLearning: false,
+    link: "https://en.wikipedia.org/wiki/Git",
   },
   {
     id: 7,
@@ -102,14 +108,16 @@ export const skills = [
     info: "nick: silvante",
     star: 5,
     isLearning: false,
+    link: "https://github.com/",
   },
   {
     id: 8,
-    name: "MUi",
+    name: "MUI",
     logo: mui,
     info: "Material ui",
     star: 3,
     isLearning: false,
+    link: "https://mui.com/",
   },
   {
     id: 9,
@@ -118,6 +126,7 @@ export const skills = [
     info: "not often using",
     star: 2,
     isLearning: false,
+    link: "https://getbootstrap.com/",
   },
   {
     id: 10,
@@ -126,6 +135,7 @@ export const skills = [
     info: "learned for mern",
     star: 4,
     isLearning: false,
+    link: "https://expressjs.com/",
   },
   {
     id: 11,
@@ -134,6 +144,7 @@ export const skills = [
     info: "for database",
     star: 3,
     isLearning: false,
+    link: "https://www.mongodb.com/",
   },
   {
     id: 12,
@@ -142,6 +153,7 @@ export const skills = [
     info: "for backend",
     star: 3,
     isLearning: false,
+    link: "https://nodejs.org/en",
   },
   {
     id: 13,
@@ -150,6 +162,7 @@ export const skills = [
     info: "for personal use",
     star: 3,
     isLearning: false,
+    link: "https://www.ruby-lang.org/en/",
   },
   {
     id: 14,
@@ -158,6 +171,7 @@ export const skills = [
     info: "for Full-stack",
     star: 5,
     isLearning: false,
+    link: "https://rubyonrails.org/",
   },
   {
     id: 15,
@@ -166,6 +180,7 @@ export const skills = [
     info: "with ORM",
     star: 4,
     isLearning: false,
+    link: "https://www.mysql.com/",
   },
   {
     id: 16,
@@ -174,6 +189,7 @@ export const skills = [
     info: "for backend",
     star: 4,
     isLearning: false,
+    link: "https://nestjs.com/",
   },
   {
     id: 17,
@@ -182,6 +198,7 @@ export const skills = [
     info: "for frontend",
     star: 4,
     isLearning: false,
+    link: "https://nextjs.org/",
   },
   {
     id: 18,
@@ -190,6 +207,7 @@ export const skills = [
     info: "Using for designing",
     star: 4,
     isLearning: false,
+    link: "https://www.figma.com/",
   },
   {
     id: 19,
@@ -198,6 +216,7 @@ export const skills = [
     info: "Using as ORM",
     star: 4,
     isLearning: false,
+    link: "https://www.prisma.io/",
   },
   {
     id: 20,
@@ -206,6 +225,7 @@ export const skills = [
     info: "programming language",
     star: 4,
     isLearning: false,
+    link: "https://www.typescriptlang.org/",
   },
 ];
 
