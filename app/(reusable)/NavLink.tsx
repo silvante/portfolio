@@ -16,7 +16,7 @@ export default function NavLink({ href, children }: Props) {
   return (
     <Link
       className={clsx(
-        "flex transition-alltransition-all border-b-2 border-transparent",
+        "flex items-center transition-alltransition-all border-b-2 border-transparent shrink-0 gap-1",
         isActive && "flex border-b-2 border-violet-600 transition-all"
       )}
       href={href}

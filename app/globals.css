@@ -46,3 +46,14 @@ body {
 button {
   cursor: pointer;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.unscroll::-webkit-scrollbar {
+  display: none;
+}
