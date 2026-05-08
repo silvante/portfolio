@@ -29,6 +29,7 @@ import dust from "./assets/pr/dust.png";
 import stays from "./assets/pr/stays.png";
 import nuna from "./assets/pr/nuna.jpg";
 import kickstart from "./assets/pr/kickstart.png";
+import firegit from "./assets/pr/firegit.png"
 
 // lottie
 // import lottie from "./assets/lottie/space.lottie"
@@ -336,7 +337,7 @@ export const projects = [
     info: "While this is not fully out of scratch project, it played its role to teach me code reviewing, deploying and VPS management, after all this site is only for me and my team to use and only.",
     link: "https://firegit.cloud",
     // gitHub: "https://github.com/silvante/kickstart_js",
-    image: kickstart,
+    image: firegit,
     texnos: ["#VPS", "#cloudflare", "#gitea", "#linux", "#pnpm"],
     star: 5,
   },
