@@ -330,6 +330,16 @@ export const projects = [
     texnos: ["#nest_js", "#nexts_js", "#passport_js", "#BullMQ", "#npm"],
     star: 5,
   },
+  {
+    id: 11,
+    name: "Firegit | Gitea",
+    info: "While this is not fully out of scratch project, it played its role to teach me code reviewing, deploying and VPS management, after all this site is only for me and my team to use and only.",
+    link: "https://firegit.cloud",
+    // gitHub: "https://github.com/silvante/kickstart_js",
+    image: kickstart,
+    texnos: ["#VPS", "#cloudflare", "#gitea", "#linux", "#pnpm"],
+    star: 5,
+  },
 ];
 
 export const profile_picture = mardonbek;
