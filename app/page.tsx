@@ -8,7 +8,7 @@ export default function Home() {
       <Banner />
       <div className="w-full flex justify-center items-center mb-5">
         <a
-          href={"/resume/xamidov_mardonbek_resume.pdf"}
+          href={"/resume/resumehh.pdf"}
           download
           className="flex gap-1 base_bg py-2 px-4 rounded-xl"
         >
