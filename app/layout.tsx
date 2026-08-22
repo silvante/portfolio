@@ -105,7 +105,7 @@ export default function RootLayout({
           <div className="w-[90%] lg:w-[1182px] flex flex-col">
             <Header />
             <TopMark />
-            <div className="w-full flex-1 main_bg rounded-tr-xl rounded-tl-xl border-t border-x border-gray-700 flex flex-col">
+            <div className="w-full flex-1 main_bg rounded-tr-2xl rounded-tl-2xl border-t border-x border-gray-700 flex flex-col">
               <Nav />
               <section className="flex-1">{children}</section>
               <Footer />

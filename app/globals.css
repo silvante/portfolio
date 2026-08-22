@@ -26,7 +26,7 @@ body {
 }
 
 .base_bg {
-  background-color: #293f4c;
+  @apply bg-linear-to-t from-violet-800 to-violet-600 border-t-2 border-l-2 border-violet-400
 }
 
 .main_bg {

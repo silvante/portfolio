@@ -20,16 +20,9 @@ import prisma from "./assets/prisma.svg";
 import typescript from "./assets/typescript.svg";
 
 import autoposter from "./assets/pr/autoposter.png";
-import mcg from "./assets/pr/mcg.png";
-import slivait from "./assets/pr/slivait.png";
 import menemarket from "./assets/pr/menemarket.png";
-import pizza from "./assets/pr/pizza.png";
-import pizza_admin from "./assets/pr/pizza_admin.png";
-import dust from "./assets/pr/dust.png";
-import stays from "./assets/pr/stays.png";
 import nuna from "./assets/pr/nuna.jpg";
 import kickstart from "./assets/pr/kickstart.png";
-import firegit from "./assets/pr/firegit.png"
 
 // lottie
 // import lottie from "./assets/lottie/space.lottie"
@@ -242,26 +235,6 @@ export const projects = [
     star: 5,
   },
   {
-    id: 2,
-    name: "MCG",
-    info: "this game wes created when I was just learning begining of js, for fun.",
-    link: "https://mcg-game.netlify.app/",
-    gitHub: "https://github.com/Khamidov-M/memory-card-game",
-    image: mcg,
-    texnos: ["#html", "#css", "#JavaScript"],
-    star: 2,
-  },
-  {
-    id: 3,
-    name: "Slivait",
-    info: "This web was created for fun when I was learning node js and express (mern)",
-    link: "https://slivait.netlify.app/",
-    gitHub: "https://github.com/silvante/slivait",
-    image: slivait,
-    texnos: ["#html", "#css", "#JavaScript", "#react", "#tailwind"],
-    star: 2,
-  },
-  {
     id: 4,
     name: "mene_market backend",
     info: "Backend part of mene market e-comm",
@@ -282,46 +255,6 @@ export const projects = [
     star: 4,
   },
   {
-    id: 6,
-    name: "Pizza (RehHot), client",
-    info: "Full stack project with ruby on rails admin is inside of project",
-    // link: "https://menemarket.netlify.app/",
-    gitHub: "https://github.com/silvante/pizza",
-    image: pizza,
-    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
-    star: 4,
-  },
-  {
-    id: 7,
-    name: "Pizza (RehHot), admin",
-    info: "Full stack project with ruby on rails client is inside of project",
-    // link: "https://menemarket.netlify.app/",
-    gitHub: "https://github.com/silvante/pizza",
-    image: pizza_admin,
-    texnos: ["#rails", "#ruby", "#mysql", "#tailwind"],
-    star: 5,
-  },
-  {
-    id: 8,
-    name: "Dust (Figma)",
-    info: "I have created full design of (desktop) Social media named Dust (idea is my own not copied) and can sell it if you need",
-    link: "https://www.figma.com/design/i8rA7VUzwSODLoG5JAMETo/the_dast?node-id=0-1&p=f&t=uhjPY9e5xi1lgEVs-0",
-    // gitHub: "how",
-    image: dust,
-    texnos: ["#figma", "#boxicons"],
-    star: 4,
-  },
-  {
-    id: 9,
-    name: "Stays (Figma)",
-    info: "I have created full design of (desktop) Social media named Stays (idea is my own not copied) site is for managing booking, I and can sell it if you need",
-    // link: "not really",
-    // gitHub: "how",
-    image: stays,
-    texnos: ["#figma", "#boxicons"],
-    star: 4,
-  },
-  {
     id: 10,
     name: "Kickstart JS",
     info: "Nest and Next js template with pre built authentication and ton of configirations you can use it to generate new template for your next project",
@@ -329,16 +262,6 @@ export const projects = [
     gitHub: "https://github.com/silvante/kickstart_js",
     image: kickstart,
     texnos: ["#nest_js", "#nexts_js", "#passport_js", "#BullMQ", "#npm"],
-    star: 5,
-  },
-  {
-    id: 11,
-    name: "Firegit | Gitea",
-    info: "While this is not fully out of scratch project, it played its role to teach me code reviewing, deploying and VPS management, after all this site is only for me and my team to use and only.",
-    link: "https://firegit.cloud",
-    // gitHub: "https://github.com/silvante/kickstart_js",
-    image: firegit,
-    texnos: ["#VPS", "#cloudflare", "#gitea", "#linux", "#pnpm"],
     star: 5,
   },
 ];

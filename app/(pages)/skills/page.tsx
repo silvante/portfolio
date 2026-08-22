@@ -92,7 +92,7 @@ export default function Skills() {
       <p>Next page</p>
       <Link
         href={"/projects"}
-        className="px-4 py-2 bg-violet-600 rounded-xl inline-block"
+        className="px-4 py-2 base_bg rounded-xl inline-block"
       >
         Projects →
       </Link>

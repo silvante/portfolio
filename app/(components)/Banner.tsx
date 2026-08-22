@@ -30,7 +30,7 @@ export default function Banner() {
         </div>
         <Link
           href={"/info"}
-          className="px-4 py-2 bg-violet-600 rounded-xl inline-block mt-4"
+          className="px-4 py-2 base_bg rounded-xl inline-block mt-4"
         >
           About me →
         </Link>

@@ -10,7 +10,7 @@ export default function Home() {
         <a
           href={"/resume/xamidov_mardonbek_resume.pdf"}
           download
-          className="flex gap-1 bg-violet-600 py-2 px-4 rounded-xl"
+          className="flex gap-1 base_bg py-2 px-4 rounded-xl"
         >
           Download Resume <FileDown />
         </a>
