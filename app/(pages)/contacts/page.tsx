@@ -106,7 +106,7 @@ export default function Contacts() {
           <a
               href="mailto:khamidov.ko@gmail.com"
           >
-            <h2 className="hover:opacity-100 opacity-50 text-4xl font-bold break-all">
+            <h2 className="hover:opacity-100 opacity-70 text-4xl font-bold break-all">
               khamidov.ko@gmail.com
             </h2>
           </a>
