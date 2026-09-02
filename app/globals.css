@@ -1,52 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #0f1115;
-  --foreground: #ffffff;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f1115;
-    --foreground: #ededed;
-  }
-}
+/* main color = #e62d42 */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-gray-900
+}
+
+.base_text {
+  @apply text-[#e62d42]
 }
 
 .base_bg {
-  @apply bg-linear-to-t from-violet-800 to-violet-600 border-t-2 border-l-2 border-violet-400
+  @apply bg-[#e62d42]
 }
 
-.main_bg {
-  background-color: #192125;
+.base_btn {
+  @apply bg-[#e62d42] flex gap-2 text-white py-3 px-6 rounded-md active:scale-95 transition-all
 }
 
-.body_bg {
-  background: #0f1115;
-}
-
-.bg-img {
-  background-image: url(./assets/bg-one.jpg);
-  background-position: center;
-  background-size: cover;
+.ghost_btn {
+  @apply bg-transparent flex gap-2 text-[#e62d42] py-3 px-6 rounded-md border-2 border-[#e62d42] active:scale-95 transition-all hover:bg-[#e62d42] hover:text-white
 }
 
 button {
   cursor: pointer;
 }
 
+/* this is for scrollbar */
 .no-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */

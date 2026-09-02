@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
 import Nav from "./(components)/Nav";
@@ -7,7 +7,7 @@ import Footer from "./(components)/Footer";
 import TopMark from "./(components)/TopMark";
 import { Toaster } from "react-hot-toast";
 
-const montserrat = Montserrat({
+const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["500", "700"], // add other weights if needed
   display: "swap",
@@ -99,18 +99,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${space_grotesk.className} antialiased`}>
         <Toaster position="top-right" reverseOrder={true} />
-        <main className="w-full h-screen flex justify-center">
-          <div className="w-[90%] lg:w-[1182px] flex flex-col">
+        <main>
             <Header />
-            <TopMark />
-            <div className="w-full flex-1 main_bg rounded-tr-2xl rounded-tl-2xl border-t border-x border-gray-700 flex flex-col">
-              <Nav />
-              <section className="flex-1">{children}</section>
+            <div className="container mx-auto">
+              <section>{children}</section>
               <Footer />
             </div>
-          </div>
         </main>
       </body>
     </html>

@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { github_icon, my_github_link, profile_picture } from "../data";
-import Image from "next/image";
+import Link from "next/link";
+import {MoveRight} from "lucide-react";
+import Nav from "@/app/(components)/Nav";
 
 export default function Header() {
   const date = new Date();
@@ -15,37 +16,18 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full flex justify-between py-6 items-center px-5">
-      <div className="flex items-center gap-2 sm:gap-5">
-        <div className="overflow-hidden rounded-full bg-slate-200 w-12 h-12 sm:w-16 sm:h-16 border border-white">
-          <Image
-            src={profile_picture}
-            alt="Mardonbek Khamidov, profile picture, Xamidov Mardonbek"
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <p className="font-semibold">Mardonbek Khamidov</p>
-          <p className="opacity-70">{myOld} years old, Uzbek</p>
-        </div>
-      </div>
-      <a
-        href={my_github_link}
-        className="text-white font-medium py-2 px-4 rounded hidden md:flex justify-center items-center gap-3"
-        target="_blanck"
-      >
-        Open my gitHub{" "}
-        <Image src={github_icon} alt="Open my github" width={48} height={48} />
-      </a>
-      <a
-        href={my_github_link}
-        target="_blanck"
-        className="text-4xl md:hidden"
-        onClick={handleTogle}
-      >
-        <Image src={github_icon} alt="Open my github" width={48} height={48} />
-      </a>
+    <header className="w-full py-4 px-5 border-b border-b-gray-200 flex justify-center items-center sticky top-0 left-0 bg-white/80 backdrop-blur-xl z-50">
+        <section className="container flex justify-between items-center">
+            <div className="flex items-center gap-2 sm:gap-5">
+                <Link href={"/"}>
+                    <p className="font-semibold text-4xl">Xamidov<span className="base_text">.</span></p>
+                </Link>
+            </div>
+            <div className="flex items-center gap-6">
+                <Nav />
+                <Link href={"/contacts"} className="base_btn">Bog'lanish <MoveRight /></Link>
+            </div>
+        </section>
     </header>
   );
 }

@@ -1,5 +1,4 @@
 import { my_github_link } from "@/app/data";
-import { Send } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import BlueSky from "@/app/assets/bluesky.svg";
@@ -7,6 +6,7 @@ import Pinterest from "@/app/assets/Pinterest.svg";
 import Github from "@/app/assets/Github.svg";
 import Youtube from "@/app/assets/Youtube.svg";
 import Telegram from "@/app/assets/Telegram.svg";
+import PageHeading from "@/app/(reusable)/PageHeading";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Contacts",
@@ -84,79 +84,66 @@ export const metadata: Metadata = {
 
 export default function Contacts() {
   return (
-    <div className="p-5 space-y-5">
-      <h1 className="text-2xl font-semibold">Contacts</h1>
-      <p>
-        As a person who does not like jokes, I remind you, please whire or call
-        to me only about something important, non-important messages and call
-        will be ignored or even spammed. thank you for understanding and those
-        are all of my social contacts, phone number and email, mostly I can
-        answer from 9:00 to 22:00, thank you!
-      </p>
-      <div className="space-y-3">
-        <p>email</p>
-        <h3 className="text-xl font-semibold">khamidov.ko@gmail.com</h3>
+    <main className="w-full py-16">
+      <div className="space-y-12">
+        <PageHeading text="Bog‘lanish" />
+
+        <section className="space-y-5">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] opacity-60">
+            Aloqa
+          </p>
+
+          <h2 className="text-8xl font-bold">
+            +998 (94) 820-94-82
+          </h2>
+        </section>
+
+        <section className="max-w-4xl space-y-5">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] opacity-60">
+            E-mail
+          </p>
+
+          <a
+              href="mailto:khamidov.ko@gmail.com"
+          >
+            <h2 className="hover:opacity-100 opacity-50 text-4xl font-bold break-all">
+              khamidov.ko@gmail.com
+            </h2>
+          </a>
+        </section>
+
+        <section className="space-y-5">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] opacity-60">
+              Ijtimoiy tarmoqlar
+            </p>
+          </div>
+
+          <ul className="flex flex-wrap gap-3">
+            <li>
+              <a
+                href="https://t.me/shrinerb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ghost_btn"
+              >
+                Telegram
+              </a>
+            </li>
+
+            <li>
+              <a
+                href={my_github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ghost_btn"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div className="space-y-3">
-        <p>phone number</p>
-        <h3 className="text-xl font-semibold">+998 (94) 820-94-82</h3>
-      </div>
-      <div className="space-y-3">
-        <p>social account</p>
-        <ul className="flex flex-wrap gap-3">
-          <li>
-            <a
-              href="https://t.me/shrinerb"
-              target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-blue-500 rounded-md"
-            >
-              <Image src={Telegram} width={24} height={24} alt="Telegram" />{" "}
-              Telegram
-            </a>
-          </li>
-          <li>
-            <a
-              href={my_github_link}
-              target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-gray-950 rounded-md"
-            >
-              <Image src={Github} width={24} height={24} alt="Github" />{" "}
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://bsky.app/profile/xamidov.bsky.social"
-              target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-[#1185fe] rounded-md"
-            >
-              <Image src={BlueSky} width={24} height={24} alt="bluesky" />{" "}
-              Bluesky
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@newassembler"
-              target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-red-600 rounded-md"
-            >
-              <Image src={Youtube} width={24} height={24} alt="Youtube" />{" "}
-              Youtube
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.pinterest.com/vanillavanetine/_created/"
-              target="_blanck"
-              className="flex items-center gap-3 py-2 px-4 bg-[#bd081c] rounded-md"
-            >
-              <Image src={Pinterest} width={24} height={24} alt="Pinterest" />{" "}
-              Pinterest
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* <Contact /> */}
-    </div>
+    </main>
   );
 }
