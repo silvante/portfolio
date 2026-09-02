@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full py-4 px-5 border-b border-b-gray-200 flex justify-center items-center sticky top-0 left-0 bg-white/80 backdrop-blur-xl z-50">
+    <header className="w-full py-4 px-5 border-b border-b-gray-200 flex justify-center items-center sticky top-0 left-0 bg-white backdrop-blur-xl z-50">
         <section className="container flex justify-between items-center">
             <div className="flex items-center gap-2 sm:gap-5">
                 <Link href={"/"}>

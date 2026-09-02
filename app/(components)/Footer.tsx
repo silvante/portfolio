@@ -1,21 +1,16 @@
+import Link from "next/link";
+
 export default function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
-    <footer className="p-5">
-      <div className="w-full md:flex justify-between items-center">
-        <p className="text-white/70">
-          original portfolio{" "}
-          <span className="text-white">www.xamidov.uz</span>
-        </p>
-        <p className="text-white/70">
-          email:{" "}
-          <a
-            href="mailto:info@xamidov.uz"
-            target="_blanck"
-            className="text-white"
-          >
-            info@xamidov.uz
-          </a>
-        </p>
+    <footer className="p-10  border-t border-gray-200">
+      <div className="container md:flex justify-between items-center mx-auto">
+          <Link href={"/"}>
+            <p className="font-semibold text-4xl ">Xamidov<span className="base_text">.</span></p>
+          </Link>
+        <p>© {year} Xamidov.uz</p>
       </div>
     </footer>
   );

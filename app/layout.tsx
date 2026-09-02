@@ -101,12 +101,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${space_grotesk.className} antialiased`}>
         <Toaster position="top-right" reverseOrder={true} />
-        <main>
-            <Header />
-            <div className="container mx-auto">
-              <section>{children}</section>
-              <Footer />
-            </div>
+        <main className="w-full min-h-screen flex flex-col">
+            <section className="flex-1">
+              <Header />
+              <div className="container mx-auto">
+                {children}
+              </div>
+            </section>
+            <Footer />
         </main>
       </body>
     </html>
