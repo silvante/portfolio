@@ -130,3 +130,4 @@ export const languages = [
 ]
 
 export const my_github_link = "https://github.com/silvante/";
+export const my_telegram_link = "https://t.me/shrinerb";

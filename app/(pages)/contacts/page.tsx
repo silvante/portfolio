@@ -1,11 +1,5 @@
-import { my_github_link } from "@/app/data";
+import {my_github_link, my_telegram_link} from "@/app/data";
 import { Metadata } from "next";
-import Image from "next/image";
-import BlueSky from "@/app/assets/bluesky.svg";
-import Pinterest from "@/app/assets/Pinterest.svg";
-import Github from "@/app/assets/Github.svg";
-import Youtube from "@/app/assets/Youtube.svg";
-import Telegram from "@/app/assets/Telegram.svg";
 import PageHeading from "@/app/(reusable)/PageHeading";
 
 export const metadata: Metadata = {
@@ -122,7 +116,7 @@ export default function Contacts() {
           <ul className="flex flex-wrap gap-3">
             <li>
               <a
-                href="https://t.me/shrinerb"
+                href={my_telegram_link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ghost_btn"
