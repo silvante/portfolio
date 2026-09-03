@@ -2,6 +2,7 @@ import Album from "@/app/(components)/Album";
 import At from "@/app/(reusable)/At";
 import { Metadata } from "next";
 import Link from "next/link";
+import PageHeading from "@/app/(reusable)/PageHeading";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Info",
@@ -79,12 +80,10 @@ export const metadata: Metadata = {
 
 export default function Info() {
   return (
-    <div className="p-5 space-y-5">
-      <h1 className="text-2xl font-semibold">Album</h1>
-      <At text="Mardonbek Khamidov photos" />
+    <div className="py-16 space-y-5">
+      <PageHeading text="Batafsil" />
       <Album />
       <h1 className="text-2xl font-semibold">About me</h1>
-      <At text="mkf" />
       <div className="space-y-3">
         <h2 className="text-xl font-semibold">
           Hey there 👋, my name is Mardonbek.

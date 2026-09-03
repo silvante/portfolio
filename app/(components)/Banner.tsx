@@ -12,7 +12,7 @@ export default function Banner() {
                     Biznesingizni keyingi darajaga olib chiqamiz<span className="base_text">.</span>
                 </h1>
 
-                <p className="max-w-xl text-base md:text-lg opacity-70 leading-relaxed">
+                <p className="max-w-lg text-base md:text-lg opacity-70 leading-relaxed">
                     Biznes uchun zamonaviy veb-saytlar, ilovalar va foydali raqamli
                     yechimlar.
                 </p>
