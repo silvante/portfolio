@@ -1,8 +1,11 @@
-import Album from "@/app/(components)/Album";
 import At from "@/app/(reusable)/At";
 import { Metadata } from "next";
 import Link from "next/link";
 import PageHeading from "@/app/(reusable)/PageHeading";
+import Image from "next/image";
+import IMG1 from "../../assets/album/IMG1_BG.png"
+import IMG2 from "../../assets/album/IMG2_BG.png"
+import {languages, skills} from "@/app/data";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Info",
@@ -80,84 +83,81 @@ export const metadata: Metadata = {
 
 export default function Info() {
   return (
-    <div className="py-16 space-y-5">
-      <PageHeading text="Batafsil" />
-      <Album />
-      <h1 className="text-2xl font-semibold">About me</h1>
-      <div className="space-y-3">
-        <h2 className="text-xl font-semibold">
-          Hey there 👋, my name is Mardonbek.
-        </h2>
-        <h3 className="text-lg font-medium">
-          <span className="text-white/70">#</span> Overall
-        </h3>
-        <p>
-          My full name is "Mardonbek Khamidov Farkhadovich," or simply{" "}
-          <span className="font-semibold">@mkf</span>. As a child, I was really
-          interested in hardware engineering. I disassembled tons of devices to
-          see how they worked under the hood. This curiosity was one of the main
-          reasons I chose software engineering as my career—because the two
-          fields are quite similar. When I attended my first programming
-          courses, I realized it was the one path in life I could truly enjoy
-          and get paid for. I got my first laptop when I was about 8 years old,
-          and I loved using it. I became fascinated by desktop and web apps. I
-          really wanted to create something like YouTube, which helped me learn
-          to build things by hand. Even today, one of my biggest goals is to
-          create a social media platform.
-        </p>
-        <h3 className="text-lg font-medium">
-          <span className="text-white/70">#</span> Frontend Education
-        </h3>
-        <p>
-          I first started programming courses in{" "}
-          <span className="font-semibold">2022</span>, but for some reasons, I
-          dropped out after two months. Then, on{" "}
-          <span className="font-semibold">February 23, 2023</span>, I began
-          learning frontend development at Web King Education Center. After
-          studying diligently for one year, I completed the course on{" "}
-          <span className="font-semibold">February 23, 2024</span>. During that
-          time, I became familiar with JavaScript, React.js, and many helpful
-          npm libraries. I kept asking myself, "Can I build something that
-          really matters?" The answer was interesting: "Yeah, if I had someone
-          to build the backend!" But that wasn't my preferred way of working—I
-          wanted to do it myself. That’s when I realized I needed to learn
-          backend development.
-        </p>
-        <h3 className="text-lg font-medium">
-          <span className="text-white/70">#</span> Backend Education
-        </h3>
-        <p>
-          I began backend development with{" "}
-          <span className="font-semibold">Ruby</span>, and it was my{" "}
-          <span className="font-semibold">first love</span>. I loved how it
-          boosted my productivity. Ruby did its job beautifully with{" "}
-          <span className="font-semibold">Ruby on Rails</span>. It was easy to
-          use and had a beautiful, elegant syntax I really enjoyed. But as I was
-          mainly a frontend developer at the time, RoR wasn't easy for me. After
-          struggling with it, I switched to{" "}
-          <span className="font-semibold">Node.js</span>. It was more
-          complicated than Rails, but pushing through that complexity helped me
-          level up as a backend developer. I also considered learning PHP and
-          Golang, but none of them felt like Ruby. Eventually, I returned to
-          Ruby on Rails—and this time, everything clicked. I understood its
-          methods and really enjoyed working with it. Unfortunately, there are
-          few Ruby jobs in Uzbekistan, so now I use Ruby on Rails mainly for
-          side projects.
-        </p>
+      <div className="py-16 space-y-10">
+        <PageHeading text="Batafsil" />
+
+        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+          <Image
+              src={IMG1}
+              alt="Mardonbek Xamidov"
+              height={720}
+              width={1280}
+              className="w-full lg:max-w-lg grayscale hover:grayscale-0 transition-all"
+          />
+
+          <div className="flex-1 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Mardonbek Xamidov<span className="base_text">.</span>
+              </h2>
+
+              <p className="text-lg opacity-70 max-w-2xl leading-relaxed">
+                Dasturiy ta’minot ishlab chiqish faoliyatimni 2023-yilda WebKing IT Akademiyasida boshlaganman. Dasturlash bilan shug‘ullanishni boshlagan ilk kunimdan boshlab, uni men uchun shunchaki kasb emas, balki o‘ziga xos san’at sifatida shakllantirganman.
+                Keyinchalik aynan ta’lim olgan akademiyamda faoliyat yuritishni boshladim. Ish jarayonida jamoada ishlash, kod arxitekturasini to‘g‘ri tashkil etish, loyihalarni deployment qilish hamda dasturiy ta’minot ishlab chiqishning boshqa muhim jihatlari bo‘yicha amaliy tajriba orttirdim.
+              </p>
+
+              <p className="text-lg opacity-70 max-w-2xl leading-relaxed">
+                Dasturlash asoslarini akademiyada olgan bo‘lsam-da, Back-end yo‘nalishi va unda qo‘llaniladigan ko‘plab texnologiyalarni mustaqil ravishda internet manbalari hamda rasmiy dokumentatsiyalar orqali o‘rganganman. Tajribamning katta qismi esa shaxsiy qiziqishlarim, mustaqil loyihalar va amaliyot davomida shakllangan.
+              </p>
+
+              <p className="p-4 border-l-4 border-l-gray-200 text-lg max-w-2xl">
+                Buyurtmachining maqsadi — mening ustuvor vazifam. Men uchun har doim sizning manfaatingiz birinchi o‘rinda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center py-16">
+          <PageHeading text="Ko'nikmalar"/>
+        </div>
+
+        <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+          <div className="flex-1 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Texnik
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                { skills.map((s) => (
+                    <Link href={s.link} target="_blank" key={s.id} className="text-lg py-3 px-6 border border-gray-200 flex hover:bg-black/5">
+                      <p>{s.name}</p>
+                    </Link>
+                ))}
+              </div>
+
+              <br/>
+
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Til
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                { languages.map((l) => (
+                    <Link href={l.link} target="_blank" key={l.id} className="text-lg py-3 px-6 border border-gray-200 flex hover:bg-black/5">
+                      <p>{l.name}</p>
+                    </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <Image
+              src={IMG2}
+              alt="Mardonbek Xamidov"
+              height={720}
+              width={1280}
+              className="w-full lg:max-w-lg grayscale hover:grayscale-0 transition-all"
+          />
+        </div>
       </div>
-      <p>
-        If you want to know more about me, you can check my{" "}
-        <Link href={"/contacts"} className="text-violet-600 underline">
-          contacts
-        </Link>
-        .
-      </p>
-      <Link
-        href={"/skills"}
-        className="px-4 py-2 base_bg rounded-xl inline-block"
-      >
-        Skills →
-      </Link>
-    </div>
   );
 }
