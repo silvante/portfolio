@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
-import Nav from "./(components)/Nav";
 import Footer from "./(components)/Footer";
-import TopMark from "./(components)/TopMark";
 import { Toaster } from "react-hot-toast";
 
 const space_grotesk = Space_Grotesk({

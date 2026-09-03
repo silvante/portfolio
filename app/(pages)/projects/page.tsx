@@ -1,6 +1,4 @@
-import At from "@/app/(reusable)/At";
 import { Metadata } from "next";
-import Link from "next/link";
 import PageHeading from "@/app/(reusable)/PageHeading";
 
 export const metadata: Metadata = {
