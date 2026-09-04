@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import {MoveRight} from "lucide-react";
 import Nav from "@/app/(components)/Nav";
+import MobileSidebar from "@/app/(components)/MobileSidebar";
 
 export default function Header() {
   const date = new Date();
@@ -16,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full py-4 px-5 border-b border-b-gray-200 flex justify-center items-center sticky top-0 left-0 bg-white/80 backdrop-blur-lg z-50">
+    <header className="w-full py-4 px-5 border-b border-b-gray-200 flex justify-center items-center sticky top-0 left-0 bg-white/80 backdrop-blur-lg z-40">
         <section className="container flex justify-between items-center">
             <div className="flex items-center gap-2 sm:gap-5">
                 <Link href={"/"}>
@@ -24,8 +25,11 @@ export default function Header() {
                 </Link>
             </div>
             <div className="flex items-center gap-6">
-                <Nav />
-                <Link href={"/contacts"} className="base_btn">Bog'lanish <MoveRight /></Link>
+                <span className="hidden lg:block">
+                    <Nav />
+                </span>
+                <Link href={"/contacts"} className="base_btn hidden! lg:flex!">Bog'lanish <MoveRight /></Link>
+                <MobileSidebar />
             </div>
         </section>
     </header>

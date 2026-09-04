@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.10",
     "axios": "^1.10.0",
     "clsx": "^2.1.1",
     "flowbite-react": "^0.11.8",
@@ -26,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "daisyui": "^5.7.28",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
