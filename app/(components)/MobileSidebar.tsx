@@ -27,10 +27,7 @@ export default function MobileSidebar() {
         <div className="fixed inset-0 z-50 bg-black/30" />
 
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white px-5 py-4">
-          <div className="flex justify-between">
-              <Link href={"/"}>
-                  <p className="font-semibold text-4xl">Xamidov<span className="base_text">.</span></p>
-              </Link>
+          <div className="flex justify-end">
             <button
               type="button"
               onClick={() => setOpen(false)}

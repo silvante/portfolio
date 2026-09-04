@@ -102,8 +102,10 @@ export default function RootLayout({
         <main className="w-full min-h-screen flex flex-col">
             <section className="flex-1">
               <Header />
-              <div className="container mx-auto">
-                {children}
+              <div className="flex justify-center px-5">
+                <div className="container">
+                  {children}
+                </div>
               </div>
             </section>
             <Footer />
