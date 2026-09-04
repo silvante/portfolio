@@ -87,7 +87,7 @@ export default function Contacts() {
             Aloqa
           </p>
 
-          <h2 className="text-8xl font-bold">
+          <h2 className="text-2xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">
             +998 (94) 820-94-82
           </h2>
         </section>
@@ -100,7 +100,7 @@ export default function Contacts() {
           <a
               href="mailto:khamidov.ko@gmail.com"
           >
-            <h2 className="text-4xl font-bold break-all">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold break-all">
               khamidov.ko@gmail.com
             </h2>
           </a>
