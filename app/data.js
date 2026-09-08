@@ -129,5 +129,20 @@ export const languages = [
   },
 ]
 
-export const my_github_link = "https://github.com/silvante/";
-export const my_telegram_link = "https://t.me/shrinerb";
+export const contacts = [
+  {
+    id: 1,
+    name: "GitHub",
+    link: "https://github.com/silvante/"
+  },
+  {
+    id: 2,
+    name: "Telegram",
+    link: "https://t.me/shrinerb"
+  },
+  {
+    id: 3,
+    name: "Instagram",
+    link: "https://www.instagram.com/mardonbekkhamidov"
+  }
+]

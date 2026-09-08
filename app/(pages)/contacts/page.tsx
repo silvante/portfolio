@@ -1,4 +1,4 @@
-import {my_github_link, my_telegram_link} from "@/app/data";
+import {contacts} from "@/app/data";
 import { Metadata } from "next";
 import PageHeading from "@/app/(reusable)/PageHeading";
 
@@ -114,27 +114,18 @@ export default function Contacts() {
           </div>
 
           <ul className="flex flex-wrap gap-3">
-            <li>
-              <a
-                href={my_telegram_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ghost_btn"
-              >
-                Telegram
-              </a>
-            </li>
-
-            <li>
-              <a
-                href={my_github_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ghost_btn"
-              >
-                GitHub
-              </a>
-            </li>
+            {contacts.map((c) => (
+                <li key={c.id}>
+                  <a
+                      href={c.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ghost_btn"
+                  >
+                    {c.name}
+                  </a>
+                </li>
+            ))}
           </ul>
         </section>
       </div>
