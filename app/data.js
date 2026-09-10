@@ -138,7 +138,7 @@ export const contacts = [
   {
     id: 2,
     name: "Telegram",
-    link: "https://t.me/shrinerb"
+    link: "https://t.me/mardonbekxamidov"
   },
   {
     id: 3,
