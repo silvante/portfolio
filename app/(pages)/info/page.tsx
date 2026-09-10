@@ -5,6 +5,7 @@ import Image from "next/image";
 import IMG1 from "../../assets/album/IMG1_BG.png"
 import IMG2 from "../../assets/album/IMG2_BG.png"
 import {languages, skills} from "@/app/data";
+import Counters from "@/app/(components)/Counters";
 
 export const metadata: Metadata = {
   title: "Mardonbek Khamidov | Portfolio | Info",
@@ -115,6 +116,10 @@ export default function Info() {
             </div>
           </div>
         </div>
+
+        <br/>
+
+        <Counters/>
 
         <div className="text-center py-16">
           <PageHeading text="Ko'nikmalar"/>

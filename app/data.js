@@ -146,3 +146,24 @@ export const contacts = [
     link: "https://www.instagram.com/mardonbekkhamidov"
   }
 ]
+
+export const counts = [
+  {
+    id: 1,
+    amount: skills.length,
+    name: "Ko'nikmalar",
+    desc: "Texnologiyalar"
+  },
+  {
+    id: 2,
+    amount: languages.length,
+    name: "Tillar",
+    desc: "Erkin muloqot & yozma nutq"
+  },
+  {
+    id: 3,
+    amount: "4+",
+    name: "Yaratilgan loyihalar",
+    desc: "Web-sahifalar, Ilovalar, Dizayn"
+  },
+]
