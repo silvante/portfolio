@@ -12,9 +12,9 @@ const space_grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Mardonbek Khamidov | Portfolio",
+  title: "Mardonbek Xamidov | Portfolio",
   description:
-    "Welcome to the official portfolio of Mardonbek Khamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
+    "Welcome to the official portfolio of Mardonbek Xamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
   keywords: [
     "Khamidov",
     "khamidov",
@@ -52,27 +52,27 @@ export const metadata: Metadata = {
     canonical: "https://xamidov.uz",
   },
   openGraph: {
-    title: "Mardonbek Khamidov | Portfolio",
+    title: "Mardonbek Xamidov | Portfolio",
     description:
       "Full-stack developer with mastery in frameworks like Next.js, Rails, and NestJS. Explore technical proficiencies here.",
     url: "https://xamidov.com",
-    siteName: "Mardonbek Khamidov Portfolio",
+    siteName: "Mardonbek Xamidov Portfolio",
     images: [
       {
         url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
         width: 280,
         height: 280,
         type: "image/png",
-        alt: "Mardonbek Khamidov Portfolio Preview",
+        alt: "Mardonbek Xamidov Portfolio Preview",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mardonbek Khamidov | Portfolio",
+    title: "Mardonbek Xamidov | Portfolio",
     description:
-      "Welcome to the official portfolio of Mardonbek Khamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
+      "Welcome to the official portfolio of Mardonbek Xamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
     images: [
       "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
     ],

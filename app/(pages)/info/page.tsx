@@ -8,9 +8,9 @@ import {languages, skills} from "@/app/data";
 import Counters from "@/app/(components)/Counters";
 
 export const metadata: Metadata = {
-  title: "Mardonbek Khamidov | Portfolio | Info",
+  title: "Mardonbek Xamidov | Portfolio | Info",
   description:
-    "I'm Mardonbek Khamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
+    "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
   keywords: [
     "Khamidov",
     "khamidov",
@@ -48,27 +48,27 @@ export const metadata: Metadata = {
     canonical: "https://xamidov.uz/info",
   },
   openGraph: {
-    title: "Mardonbek Khamidov | Portfolio | Info",
+    title: "Mardonbek Xamidov | Portfolio | Info",
     description:
-      "I'm Mardonbek Khamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
+      "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
     url: "https://xamidov.com/info",
-    siteName: "Mardonbek Khamidov Portfolio",
+    siteName: "Mardonbek Xamidov Portfolio",
     images: [
       {
         url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
         width: 280,
         height: 280,
         type: "image/png",
-        alt: "Mardonbek Khamidov Portfolio Preview",
+        alt: "Mardonbek Xamidov Portfolio Preview",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mardonbek Khamidov | Portfolio | Info",
+    title: "Mardonbek Xamidov | Portfolio | Info",
     description:
-      "Explore the skill set of Mardonbek Khamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
+      "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
     images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
   },
   robots: {

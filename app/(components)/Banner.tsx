@@ -5,7 +5,7 @@ export default function Banner() {
         <section className="w-full min-h-[60vh] flex items-center justify-center px-4 py-5">
             <div className="max-w-3xl w-full flex flex-col items-center justify-center text-center gap-6">
                 <p className="text-sm font-medium uppercase tracking-[0.2em] opacity-70">
-                    Mardonbek Khamidov
+                    Mardonbek Xamidov
                 </p>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

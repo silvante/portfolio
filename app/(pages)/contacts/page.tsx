@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import PageHeading from "@/app/(reusable)/PageHeading";
 
 export const metadata: Metadata = {
-  title: "Mardonbek Khamidov | Portfolio | Contacts",
+  title: "Mardonbek Xamidov | Portfolio | Contacts",
   description:
     "Let’s connect! Whether you’re looking to hire, collaborate, or just say hello, you can reach me via email, GitHub, LinkedIn, or Telegram. I'm always open to new opportunities and meaningful conversations.",
   keywords: [
@@ -43,27 +43,27 @@ export const metadata: Metadata = {
     canonical: "https://xamidov.uz/contacts",
   },
   openGraph: {
-    title: "Mardonbek Khamidov | Portfolio | Contacts",
+    title: "Mardonbek Xamidov | Portfolio | Contacts",
     description:
       "Let’s connect! Whether you’re looking to hire, collaborate, or just say hello, you can reach me via email, GitHub, LinkedIn, or Telegram. I'm always open to new opportunities and meaningful conversations.",
     url: "https://xamidov.com/contacts",
-    siteName: "Mardonbek Khamidov Portfolio",
+    siteName: "Mardonbek Xamidov Portfolio",
     images: [
       {
         url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
         width: 280,
         height: 280,
         type: "image/png",
-        alt: "Mardonbek Khamidov Portfolio Preview",
+        alt: "Mardonbek Xamidov Portfolio Preview",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mardonbek Khamidov | Portfolio | Skills",
+    title: "Mardonbek Xamidov | Portfolio | Skills",
     description:
-      "Explore the skill set of Mardonbek Khamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
+      "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
     images: ["https://yourdomain.com/og-images/skills-page.png"],
   },
   robots: {
