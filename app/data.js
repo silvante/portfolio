@@ -143,7 +143,7 @@ export const contacts = [
   {
     id: 3,
     name: "Instagram",
-    link: "https://www.instagram.com/mardonbekkhamidov"
+    link: "https://www.instagram.com/therealxamidov"
   }
 ]
 
