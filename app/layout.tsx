@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import {Inter, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
 import Footer from "./(components)/Footer";
 import { Toaster } from "react-hot-toast";
 
-const space_grotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["500", "700"], // add other weights if needed
   display: "swap",
@@ -97,7 +97,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${space_grotesk.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <Toaster position="top-right" reverseOrder={true} />
         <main className="w-full min-h-screen flex flex-col">
             <section className="flex-1">

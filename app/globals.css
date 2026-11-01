@@ -15,11 +15,11 @@ body {
 }
 
 .base_btn {
-  @apply bg-[#e62d42] flex gap-2 text-white py-3 px-6 rounded-md active:scale-95 transition-all
+  @apply bg-gray-900 border-2 border-gray-900 flex gap-2 text-white py-3 px-6 active:scale-95 transition-all;
 }
 
 .ghost_btn {
-  @apply bg-transparent flex gap-2 text-[#e62d42] py-3 px-6 rounded-md border-2 border-[#e62d42] active:scale-95 transition-all hover:bg-[#e62d42] hover:text-white
+  @apply bg-transparent border-2 border-gray-900 flex gap-2 py-3 px-6 active:scale-95 transition-all hover:bg-gray-900 hover:text-white;
 }
 
 button {

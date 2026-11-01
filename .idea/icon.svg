@@ -1,12 +1,4 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_284_22)">
-<rect width="512" height="512" fill="white"/>
-<path d="M188 388L109 140H176L233.5 342H242.5L300 140H367L288 388H188Z" fill="#101828"/>
-<circle cx="374.5" cy="352.5" r="35.5" fill="#E62D42"/>
-</g>
-<defs>
-<clipPath id="clip0_284_22">
-<rect width="512" height="512" fill="white"/>
-</clipPath>
-</defs>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="400" fill="white"/>
+<path d="M250 80V400H210V120H190V320H150V80H250ZM130 320H90V0H130V320ZM310 320H270V80H310V320Z" fill="black"/>
 </svg>

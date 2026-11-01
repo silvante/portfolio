@@ -88,7 +88,7 @@ export default function Contacts() {
           </p>
 
           <h2 className="text-2xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">
-            +998 (94) 820-94-82
+            +998 94 820-94-82
           </h2>
         </section>
 
