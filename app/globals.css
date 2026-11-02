@@ -23,8 +23,8 @@
   --color-brand-3: #ffe9ec;
 
   /* --- type -------------------------------------------------------------- */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-grotesk), var(--font-inter), sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-grotesk), var(--font-geist), sans-serif;
   --font-mono: var(--font-mono-code), ui-monospace, "SFMono-Regular", monospace;
 
   /* fluid display scale — one source of truth for every big heading */

@@ -53,7 +53,7 @@ export default function Footer() {
               />
             </Link>
 
-            <p className="max-w-xs text-sm leading-relaxed text-ink-2">
+            <p className="max-w-xs text-base leading-relaxed text-ink-2">
               Biznes uchun zamonaviy veb-saytlar, ilovalar va foydali raqamli
               yechimlar.
             </p>
@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.id}>
-                  <Link href={link.href} className="underline-link text-sm">
+                  <Link href={link.href} className="underline-link text-base">
                     {link.label}
                   </Link>
                 </li>
@@ -85,20 +85,20 @@ export default function Footer() {
                     href={c.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline-link text-sm"
+                    className="underline-link text-base"
                   >
                     {c.name}
-                    <MoveUpRight className="size-3.5" />
+                    <MoveUpRight className="size-4" />
                   </a>
                 </li>
               ))}
               <li>
                 <a
                   href="mailto:khamidov.ko@gmail.com"
-                  className="underline-link text-sm"
+                  className="underline-link text-base"
                 >
                   E-mail
-                  <MoveUpRight className="size-3.5" />
+                  <MoveUpRight className="size-4" />
                 </a>
               </li>
             </ul>
@@ -106,7 +106,7 @@ export default function Footer() {
         </div>
 
         {/* baseline */}
-        <div className="flex flex-col gap-2 border-t border-line py-6 font-mono text-[0.6875rem] tracking-[0.12em] text-ink-3 uppercase sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-t border-line py-6 font-mono text-xs tracking-[0.12em] text-ink-3 uppercase sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Xamidov.uz</p>
           <p>Barcha huquqlar himoyalangan</p>
         </div>

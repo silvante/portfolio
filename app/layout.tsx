@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Geist, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
 import StickyHeader from "./(components)/StickyHeader";
@@ -7,11 +7,11 @@ import ScrollToTop from "./(components)/ScrollToTop";
 import Footer from "./(components)/Footer";
 import { Toaster } from "react-hot-toast";
 
-/* Body text */
-const inter = Inter({
+/* Body text — a grotesque with flat terminals and squared-off curves, so the
+   running text sits in the same drafting-table voice as the logo. */
+const geist = Geist({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -118,7 +118,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${grotesk.variable} ${mono.variable} antialiased`}
+        className={`${geist.variable} ${grotesk.variable} ${mono.variable} antialiased`}
       >
         <Toaster
           position="top-right"
