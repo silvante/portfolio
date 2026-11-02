@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PageHeading from "@/app/(reusable)/PageHeading";
+import CallToAction from "@/app/(components)/CallToAction";
 
 export const metadata: Metadata = {
   title: "Mardonbek Xamidov | Portfolio | Projects",
@@ -60,10 +61,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mardonbek Xamidov | Portfolio | Skills",
+    title: "Mardonbek Xamidov | Portfolio | Projects",
     description:
       "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
-    images: ["https://yourdomain.com/og-images/skills-page.png"],
+    images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
   },
   robots: {
     index: true,
@@ -77,8 +78,48 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <div className="py-16 space-y-5">
-      <PageHeading text="Ushbu sahifa tamirlanmoqda..."/>
+    <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <PageHeading eyebrow="Loyihalar" text="Tez kunda" />
+
+      <section className="panel p-6 sm:p-8 lg:p-14">
+        <div className="max-w-xl space-y-6">
+          <p className="eyebrow">
+            <span className="base_bg animate-blink block size-1.5" />
+            Ishlanmoqda
+          </p>
+
+          <h2 className="text-headline">
+            Ushbu sahifa tayyorlanmoqda<span className="dot">.</span>
+          </h2>
+
+          <p className="lead">
+            Yaqin kunlarda bu yerda yakunlangan loyihalar, ularning vazifalari
+            va natijalari bilan tanishishingiz mumkin bo&apos;ladi.
+          </p>
+
+          {/* progress rail — purely decorative */}
+          <div
+            aria-hidden
+            className="flex gap-1.5 pt-2"
+          >
+            {Array.from({ length: 12 }).map((_, i) => (
+              <span
+                key={i}
+                className={
+                  i < 7
+                    ? "base_bg h-2 flex-1"
+                    : "h-2 flex-1 bg-paper-3"
+                }
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CallToAction
+        title="Loyihani birinchi bo'lib ko'rmoqchimisiz"
+        text="Yangiliklardan xabardor bo'lish uchun bizga yozib qo'ying."
+      />
     </div>
   );
 }

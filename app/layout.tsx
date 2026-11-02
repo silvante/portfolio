@@ -1,13 +1,33 @@
 import type { Metadata } from "next";
-import {Inter, Space_Grotesk} from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/Header";
+import StickyHeader from "./(components)/StickyHeader";
+import ScrollToTop from "./(components)/ScrollToTop";
 import Footer from "./(components)/Footer";
 import { Toaster } from "react-hot-toast";
 
+/* Body text */
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["500", "700"], // add other weights if needed
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+/* Headlines — geometric and a little stiff, like the logo */
+const grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-grotesk",
+  display: "swap",
+});
+
+/* Labels, counters and eyebrows — the technical voice */
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono-code",
   display: "swap",
 });
 
@@ -97,19 +117,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <Toaster position="top-right" reverseOrder={true} />
-        <main className="w-full min-h-screen flex flex-col">
-            <section className="flex-1">
-              <Header />
-              <div className="flex justify-center px-5">
-                <div className="container">
-                  {children}
-                </div>
-              </div>
-            </section>
-            <Footer />
-        </main>
+      <body
+        className={`${inter.variable} ${grotesk.variable} ${mono.variable} antialiased`}
+      >
+        <Toaster
+          position="top-right"
+          reverseOrder={true}
+          toastOptions={{
+            style: {
+              borderRadius: 0,
+              border: "2px solid #0a0a0b",
+              background: "#ffffff",
+              color: "#0a0a0b",
+              boxShadow: "4px 4px 0 0 #e62d42",
+              fontSize: "0.875rem",
+              maxWidth: "22rem",
+            },
+          }}
+        />
+
+        <ScrollToTop />
+
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <StickyHeader />
+
+          <main className="flex-1">{children}</main>
+
+          <Footer />
+        </div>
       </body>
     </html>
   );

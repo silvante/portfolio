@@ -1,3 +1,15 @@
+/* ------------------------------------------------------------------
+   Navigation — single source of truth for desktop nav + mobile sidebar
+   so the two can never drift apart again.
+   ------------------------------------------------------------------ */
+export const navLinks = [
+  { id: 1, label: "Bosh sahifa", href: "/" },
+  { id: 2, label: "Batafsil", href: "/info" },
+  { id: 3, label: "Asoschi", href: "/founder" },
+  { id: 4, label: "Loyihalar", href: "/projects" },
+  { id: 5, label: "Bog'lanish", href: "/contacts" },
+];
+
 export const skills = [
   {
     id: 1,
@@ -114,7 +126,7 @@ export const skills = [
 export const languages = [
   {
     id: 1,
-    name: "Enlgish - B2 (ielts 6.5)",
+    name: "English - B2 (ielts 6.5)",
     link: "https://en.wikipedia.org/wiki/English_language",
   },
   {

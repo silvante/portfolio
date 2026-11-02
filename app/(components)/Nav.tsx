@@ -1,15 +1,16 @@
 import NavLink from "../(reusable)/NavLink";
+import { navLinks } from "@/app/data";
 
-export default function Nav() {
+export default function Nav({ heightClass }: { heightClass?: string }) {
   return (
-    <nav className="flex justify-center items-center">
-      <div className="flex items-center gap-10 uppercase text-sm">
-          <NavLink href={"/"}>Bosh sahifa</NavLink>
-          <NavLink href={"/info"}>Batafsil</NavLink>
-          <NavLink href={"/founder"}>Asoschi</NavLink>
-          <NavLink href={"/projects"}>Loyihalar</NavLink>
-          <NavLink href={"/contacts"}>Bog'lanish</NavLink>
-      </div>
-    </nav>
+    <ul className="flex items-center justify-center">
+      {navLinks.map((link) => (
+        <li key={link.id}>
+          <NavLink href={link.href} heightClass={heightClass}>
+            {link.label}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
   );
 }

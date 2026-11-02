@@ -1,27 +1,29 @@
 import { counts } from "@/app/data";
 
 export default function Counters() {
-    return (
-        <div className="w-full px-5 py-8 sm:px-8 sm:py-10 lg:px-10 border-y border-gray-200">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-                {counts.map((c) => (
-                    <div key={c.id} className="space-y-3 sm:space-y-4 lg:space-y-5">
-                        <p className="text-6xl sm:text-7xl font-semibold lg:text-8xl opacity-50 hover:opacity-100 transition-all">
-                            {c.amount}
-                        </p>
+  return (
+    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+      {counts.map((c, i) => (
+        <div key={c.id} className="group relative space-y-5 pt-7">
+          {/* hairline rule with a red tick that runs the full width on hover */}
+          <span aria-hidden className="absolute inset-x-0 top-0 h-px bg-line" />
+          <span
+            aria-hidden
+            className="base_bg absolute top-0 left-0 h-0.5 w-10 transition-all duration-500 ease-mech group-hover:w-full"
+          />
 
-                        <div>
-                            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-                                {c.name}
-                            </p>
+          <span className="eyebrow">{String(i + 1).padStart(2, "0")}</span>
 
-                            <p className="text-base sm:text-lg opacity-50">
-                                {c.desc}
-                            </p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+          <p className="font-display text-[clamp(3.5rem,9vw,5.5rem)] leading-none font-bold tracking-tighter text-ink-3 transition-colors duration-300 ease-mech group-hover:text-ink">
+            {c.amount}
+          </p>
+
+          <div className="space-y-1.5">
+            <p className="text-title">{c.name}</p>
+            <p className="text-sm text-ink-3">{c.desc}</p>
+          </div>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
