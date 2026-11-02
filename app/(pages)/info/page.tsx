@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
-import IMG2 from "../../assets/album/IMG2_BG.png";
+import img from "@/app/assets/marketting/background.png";
 
 export const metadata: Metadata = {
   title: "Mardonbek Xamidov | Portfolio | Info",
@@ -105,9 +105,9 @@ export default function Info() {
           <blockquote className="quote">Buyurtmachining maqsadi — mening ustuvor vazifam. Men uchun har doim sizning manfaatingiz birinchi o‘rinda.</blockquote>
         </div>
 
-        <div className="frame lg:col-span-5">
+        <div className="lg:col-span-5 aspect-auto flex justify-center items-center">
           <Image
-            src={IMG2}
+            src={img}
             alt="Xamidov & Associates"
             height={720}
             width={1280}
