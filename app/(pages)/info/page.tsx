@@ -232,7 +232,7 @@ export default function Info() {
       </section>
 
       {/* Workflow */}
-      <section className="space-y-10">
+      <section id="workflow" className="scroll-mt-24 space-y-10">
         <div className="space-y-5">
           <p className="eyebrow">
             <span className="base_bg block size-1.5" />
