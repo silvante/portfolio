@@ -252,37 +252,45 @@ export default function Info() {
       </section>
 
       {/* Philosophy + founder */}
-      <section className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
-        <div className="flex items-center justify-center lg:col-span-5">
+      <section className="panel grid overflow-visible border-ink bg-ink text-paper shadow-brand lg:grid-cols-12">
+        {/* Brand image — portrait source, so it gets a portrait frame */}
+        <div className="relative order-first aspect-[4/3] overflow-hidden sm:aspect-[16/9] lg:order-last lg:col-span-5 lg:aspect-auto lg:min-h-[34rem]">
           <Image
-            className="w-full max-w-sm lg:max-w-none"
             src={img}
             alt="Xamidov & Associates"
-            height={720}
-            width={1280}
-            sizes="(min-width: 1024px) 40vw, 24rem"
+            fill
+            priority={false}
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            className="object-cover object-center"
+          />
+          {/* melt the image into the card */}
+          <span
+            aria-hidden
+            className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-ink to-transparent lg:hidden"
+          />
+          <span
+            aria-hidden
+            className="absolute inset-y-0 left-0 hidden w-1/3 bg-linear-to-r from-ink to-transparent lg:block"
           />
         </div>
 
-        <div className="space-y-8 lg:col-span-7">
-          <div className="space-y-6">
-            <p className="eyebrow">
-              <span className="base_bg block size-1.5" />
-              Yondashuv
-            </p>
+        <div className="flex flex-col justify-center gap-8 p-7 sm:p-10 lg:col-span-7 lg:p-14">
+          <p className="eyebrow !text-paper/60">
+            <span className="base_bg block size-1.5" />
+            Yondashuv
+          </p>
 
-            <blockquote className="quote">
-              X&amp;A uchun hamkorlar va buyurtmachilar birinchi o‘rinda turadi.
-            </blockquote>
+          <blockquote className="border-l-4 border-brand pl-6 font-display text-[clamp(1.5rem,3.2vw,2.5rem)] leading-[1.12] font-semibold tracking-tight text-balance">
+            X&amp;A uchun hamkorlar va buyurtmachilar birinchi o‘rinda turadi.
+          </blockquote>
 
-            <p className="lead">
-              Biz agressiv savdo va qisqa muddatli foydadan ko‘ra kasbiy
-              munosabatlarni hamda barqaror rivojlanishni ustun qo‘yamiz.
-            </p>
-          </div>
+          <p className="max-w-xl text-[1.0625rem] leading-[1.7] text-paper/70">
+            Biz agressiv savdo va qisqa muddatli foydadan ko‘ra kasbiy
+            munosabatlarni hamda barqaror rivojlanishni ustun qo‘yamiz.
+          </p>
 
           {/* Founder credit */}
-          <Link href="/founder" className="chip">
+          <Link href="/founder" className="chip self-start !border-paper !bg-paper">
             Kompaniya asoschisi — Mardonbek F. Xamidov
             <MoveUpRight className="size-3.5 shrink-0 opacity-40" />
           </Link>
