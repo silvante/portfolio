@@ -18,7 +18,6 @@ const geist = Geist({
 /* Headlines — geometric and a little stiff, like the logo */
 const grotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
   variable: "--font-grotesk",
   display: "swap",
 });
