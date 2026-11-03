@@ -5,6 +5,7 @@ import { MoveUpRight } from "lucide-react";
 import img from "@/app/assets/marketting/background.png";
 import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
+import WorkflowTimeline from "@/app/(components)/WorkflowTimeline";
 
 export const metadata: Metadata = {
   title: "Mardonbek Xamidov | Portfolio | Info",
@@ -95,11 +96,37 @@ const principles = [
   },
 ];
 
+const workflow = [
+  {
+    title: "Tanishuv",
+    text: "Biznesingiz bilan tanishamiz, muammolaringizni aniqlaymiz va nimaga erishmoqchi ekaningizni tushunamiz.",
+  },
+  {
+    title: "Reja va narx",
+    text: "Yechimni muhokama qilamiz, loyiha hajmi va muddatlarini belgilaymiz hamda yakuniy narxni kelishamiz.",
+  },
+  {
+    title: "Shartnoma",
+    text: "Shartnoma imzolaymiz, mas’uliyatlarni belgilaymiz va hamkorlik shartlarini tasdiqlaymiz.",
+  },
+  {
+    title: "Ishlab chiqish",
+    text: "Jamoamiz yechimingizni loyihalaydi va yaratadi, jarayon haqida sizni muntazam xabardor qilib turadi.",
+  },
+  {
+    title: "Test va tasdiqlash",
+    text: "Hammasini sinovdan o‘tkazamiz, fikringizni yig‘amiz va kelishilgan yakuniy tuzatishlarni kiritamiz.",
+  },
+  {
+    title: "Topshirish va qo‘llab-quvvatlash",
+    text: "Tayyor mahsulotni topshiramiz, ishga tushirishda yordam beramiz va kelishuv bo‘yicha qo‘llab-quvvatlaymiz.",
+  },
+];
+
 const products = [
   "Veb-saytlar",
   "Mobil ilovalar",
   "Desktop ilovalar",
-  "Boshqa raqamli mahsulotlar",
 ];
 
 export default function Info() {
@@ -133,7 +160,7 @@ export default function Info() {
 
           <ul className="flex flex-wrap gap-2.5 pt-1">
             {products.map((p) => (
-              <li key={p} className="chip">
+              <li key={p} className="chip cursor-pointer">
                 {p}
               </li>
             ))}
@@ -202,6 +229,26 @@ export default function Info() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Workflow */}
+      <section className="space-y-10">
+        <div className="space-y-5">
+          <p className="eyebrow">
+            <span className="base_bg block size-1.5" />
+            Ish jarayoni
+          </p>
+
+          <h2 className="text-headline">
+            6 qadamda natija<span className="dot">.</span>
+          </h2>
+
+          <p className="lead max-w-2xl">
+            Birinchi suhbatdan tayyor mahsulotgacha — sodda va shaffof jarayon.
+          </p>
+        </div>
+
+        <WorkflowTimeline steps={workflow} />
       </section>
 
       {/* Philosophy + founder */}
