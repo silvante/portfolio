@@ -1,13 +1,15 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { MoveUpRight } from "lucide-react";
+import img from "@/app/assets/marketting/background.png";
 import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
-import img from "@/app/assets/marketting/background.png";
 
 export const metadata: Metadata = {
   title: "Mardonbek Xamidov | Portfolio | Info",
   description:
-    "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
+    "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
   keywords: [
     "Khamidov",
     "khamidov",
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mardonbek Xamidov | Portfolio | Info",
     description:
-      "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
+      "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
     url: "https://xamidov.com/info",
     siteName: "Mardonbek Xamidov Portfolio",
     images: [
@@ -65,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mardonbek Xamidov | Portfolio | Info",
     description:
-      "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
+      "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
     images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
   },
   robots: {
@@ -78,6 +80,28 @@ export const metadata: Metadata = {
   },
 };
 
+const principles = [
+  {
+    title: "Aniq qoidalar",
+    text: "Kelishuvlar, o‘zaro kutilmalar va mas’uliyat chegaralari ish boshlanishidan oldin ochiq va tushunarli tarzda belgilanadi.",
+  },
+  {
+    title: "To‘lovlarda shaffoflik",
+    text: "Narxlar asoslangan, to‘lov shartlari aniq bo‘ladi. Yashirin xarajatlar yo‘q.",
+  },
+  {
+    title: "Ishonch",
+    text: "Hamkorlik mas’uliyat va o‘zaro hurmatga tayanadi. Biz uzoq muddatli munosabatlarni qadrlaymiz.",
+  },
+];
+
+const products = [
+  "Veb-saytlar",
+  "Mobil ilovalar",
+  "Desktop ilovalar",
+  "Boshqa raqamli mahsulotlar",
+];
+
 export default function Info() {
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
@@ -86,33 +110,135 @@ export default function Info() {
       {/* Intro */}
       <section className="grid gap-10 lg:grid-cols-12 lg:gap-14">
         <div className="space-y-6 lg:col-span-7">
+          <p className="eyebrow">
+            <span className="base_bg block size-1.5" />
+            Kompaniya
+          </p>
+
           <h2 className="text-headline">
             Xamidov &amp; Associates<span className="dot">.</span>
           </h2>
 
           <p className="lead">
-            Biznes uchun raqamli yechimlar ishlab chiqadigan jamoa. G&apos;oyadan
-            ishga tushirishgacha bo&apos;lgan barcha bosqichlarni o&apos;z
-            ustimizga olamiz: dizayn, dasturlash, serverga joylash va keyingi
-            qo&apos;llab-quvvatlash.
+            Xamidov &amp; Associates (X&amp;A) — O‘zbekistonda faoliyat
+            yurituvchi raqamli yechimlar kompaniyasi. Biz kengaytiriladigan,
+            zamonaviy ko‘rinishdagi va ishonchli raqamli mahsulotlarni ishlab
+            chiqamiz.
           </p>
 
           <p className="lead">
-            Har bir loyihaga alohida yondashamiz. Maqsad — shunchaki sayt emas,
-            balki biznesingizga real natija keltiradigan mahsulot yaratish.
+            Faoliyatimiz veb-saytlar, mobil ilovalar, desktop ilovalar hamda
+            boshqa raqamli yechimlarni qamrab oladi.
           </p>
 
-          <blockquote className="quote">Buyurtmachining maqsadi — mening ustuvor vazifam. Men uchun har doim sizning manfaatingiz birinchi o‘rinda.</blockquote>
+          <ul className="flex flex-wrap gap-2.5 pt-1">
+            {products.map((p) => (
+              <li key={p} className="chip">
+                {p}
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <div className="lg:col-span-5 aspect-auto flex justify-center items-center">
+        <div className="lg:col-span-5">
+          <div className="panel h-full space-y-8 p-7 sm:p-9">
+            <p className="eyebrow">
+              <span className="base_bg block size-1.5" />
+              Qisqacha
+            </p>
+
+            <dl className="divide-y divide-line">
+              <div className="space-y-1.5 pb-5">
+                <dt className="eyebrow">Joylashuv</dt>
+                <dd className="text-title">O‘zbekiston</dd>
+              </div>
+              <div className="space-y-1.5 py-5">
+                <dt className="eyebrow">Faoliyat turi</dt>
+                <dd className="text-title">Raqamli yechimlar</dd>
+              </div>
+              <div className="space-y-1.5 pt-5">
+                <dt className="eyebrow">Asoschi</dt>
+                <dd className="text-title">Mardonbek F. Xamidov</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* Principles */}
+      <section className="space-y-10">
+        <div className="space-y-5">
+          <p className="eyebrow">
+            <span className="base_bg block size-1.5" />
+            Qadriyatlar
+          </p>
+
+          <h2 className="text-headline">
+            Uch tamoyil<span className="dot">.</span>
+          </h2>
+
+          <p className="lead max-w-2xl">
+            Faoliyatimiz quyidagi uch asosiy tamoyilga asoslanadi.
+          </p>
+        </div>
+
+        <div className="grid gap-x-8 gap-y-14 md:grid-cols-3">
+          {principles.map((p, i) => (
+            <div key={p.title} className="group relative space-y-5 pt-7">
+              <span aria-hidden className="absolute inset-x-0 top-0 h-px bg-line" />
+              <span
+                aria-hidden
+                className="base_bg absolute top-0 left-0 h-0.5 w-10 transition-all duration-500 ease-mech group-hover:w-full"
+              />
+
+              <p className="font-display text-[clamp(3.5rem,9vw,5.5rem)] leading-none font-bold tracking-tighter text-ink-3 transition-colors duration-300 ease-mech group-hover:text-ink">
+                {String(i + 1).padStart(2, "0")}
+              </p>
+
+              <div className="space-y-2">
+                <h3 className="text-title">{p.title}</h3>
+                <p className="text-sm leading-relaxed text-ink-3">{p.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Philosophy + founder */}
+      <section className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
+        <div className="flex items-center justify-center lg:col-span-5">
           <Image
+            className="w-full max-w-sm lg:max-w-none"
             src={img}
             alt="Xamidov & Associates"
             height={720}
             width={1280}
-            sizes="(min-width: 1024px) 40vw, 100vw"
+            sizes="(min-width: 1024px) 40vw, 24rem"
           />
+        </div>
+
+        <div className="space-y-8 lg:col-span-7">
+          <div className="space-y-6">
+            <p className="eyebrow">
+              <span className="base_bg block size-1.5" />
+              Yondashuv
+            </p>
+
+            <blockquote className="quote">
+              X&amp;A uchun hamkorlar va buyurtmachilar birinchi o‘rinda turadi.
+            </blockquote>
+
+            <p className="lead">
+              Biz agressiv savdo va qisqa muddatli foydadan ko‘ra kasbiy
+              munosabatlarni hamda barqaror rivojlanishni ustun qo‘yamiz.
+            </p>
+          </div>
+
+          {/* Founder credit */}
+          <Link href="/founder" className="chip">
+            Kompaniya asoschisi — Mardonbek F. Xamidov
+            <MoveUpRight className="size-3.5 shrink-0 opacity-40" />
+          </Link>
         </div>
       </section>
 
