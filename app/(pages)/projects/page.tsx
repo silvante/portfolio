@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import { COMPANY, SITE_URL, breadcrumbs, ids, pageMetadata } from "@/app/lib/site";
+import JsonLd from "@/app/(components)/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
@@ -6,85 +7,41 @@ import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
 import { getProjects } from "@/app/lib/projects";
 
-export const metadata: Metadata = {
-  title: "Mardonbek Xamidov | Portfolio | Projects",
+export const metadata = pageMetadata({
+  title: "Loyihalar — bajarilgan veb-saytlar va ilovalar",
   description:
-    "A curated showcase of real-world applications I’ve built, ranging from startup MVPs to scalable platforms. Each project demonstrates my expertise in frontend and backend development, with clean code and user-centered design.",
-  keywords: [
-    "Khamidov",
-    "khamidov",
-    "hamidov",
-    "Hamidov",
-    "Xamidov",
-    "xamidov",
-    "Mardonbek",
-    "mardonbek",
-    "Mardonbek Khamidov",
-    "Mardonbek Khamidov projects",
-    "mardonbek khamidov",
-    "mardonbek khamidov projects",
-    "Mardonbek Xamidov",
-    "Mardonbek Xamidov projects",
-    "mardonbek xamidov",
-    "mardonbek xamidov projects",
-    "Mardonbek Hamidov",
-    "mardonbek hamidov",
-    "sayt",
-    "portfolio",
-    "Portfolio",
-    "khamidov-porfoio",
-    "Khamidov-porfoio",
-    "Xamidov-porfoio",
-    "Mardonbek uz",
-    "Mardonbek Uz",
-    "mardonbek uz",
-    "Xamidov uz",
-    "Khamidov uz",
-    "xamidov uz",
-    "khamidov uz",
-  ],
-  alternates: {
-    canonical: "https://xamidov.uz/projects",
-  },
-  openGraph: {
-    title: "Mardonbek Xamidov | Portfolio | Projects",
-    description:
-      "A curated showcase of real-world applications I’ve built, ranging from startup MVPs to scalable platforms. Each project demonstrates my expertise in frontend and backend development, with clean code and user-centered design.",
-    url: "https://xamidov.com/projects",
-    siteName: "Mardonbek Xamidov Portfolio",
-    images: [
-      {
-        url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-        width: 280,
-        height: 280,
-        type: "image/png",
-        alt: "Mardonbek Xamidov Portfolio Preview",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mardonbek Xamidov | Portfolio | Projects",
-    description:
-      "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
-    images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-};
+    "Xamidov & Associates tomonidan yaratilgan veb-saytlar va ilovalar: vazifa, yechim, texnologiyalar va skrinshotlar. Keyingi loyiha sizniki bo‘lsinmi?",
+  path: "/projects",
+});
 
 export default function Projects() {
   const projects = getProjects();
 
+  const graph = [
+    {
+      "@type": "CollectionPage",
+      "@id": `${SITE_URL}/projects`,
+      url: `${SITE_URL}/projects`,
+      name: `Loyihalar — ${COMPANY.name}`,
+      inLanguage: "uz",
+      isPartOf: { "@id": ids.website },
+      about: { "@id": ids.org },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: projects.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${SITE_URL}/projects/${p.slug}`,
+          name: p.title,
+        })),
+      },
+    },
+    breadcrumbs([{ name: "Loyihalar", path: "/projects" }]),
+  ];
+
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <JsonLd data={graph} />
       <PageHeading eyebrow="Loyihalar" text="Bajarilgan ishlar" />
 
       {projects.length === 0 ? (

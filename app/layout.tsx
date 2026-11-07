@@ -6,6 +6,15 @@ import StickyHeader from "./(components)/StickyHeader";
 import ScrollToTop from "./(components)/ScrollToTop";
 import Footer from "./(components)/Footer";
 import { Toaster } from "react-hot-toast";
+import JsonLd from "./(components)/JsonLd";
+import {
+  COMPANY,
+  FOUNDER,
+  NAME_KEYWORDS,
+  SERVICE_KEYWORDS,
+  SITE_URL,
+  siteGraph,
+} from "./lib/site";
 
 /* Body text — a grotesque with flat terminals and squared-off curves, so the
    running text sits in the same drafting-table voice as the logo. */
@@ -31,70 +40,31 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mardonbek Xamidov | Portfolio",
-  description:
-    "Welcome to the official portfolio of Mardonbek Xamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
-  keywords: [
-    "Khamidov",
-    "khamidov",
-    "hamidov",
-    "Hamidov",
-    "Xamidov",
-    "xamidov",
-    "Mardonbek",
-    "mardonbek",
-    "Mardonbek Khamidov",
-    "Mardonbek Khamidov",
-    "mardonbek khamidov",
-    "mardonbek khamidov",
-    "Mardonbek Xamidov",
-    "Mardonbek Xamidov",
-    "mardonbek xamidov",
-    "mardonbek xamidov",
-    "Mardonbek Hamidov",
-    "mardonbek hamidov",
-    "sayt",
-    "portfolio",
-    "Portfolio",
-    "khamidov-porfoio",
-    "Khamidov-porfoio",
-    "Xamidov-porfoio",
-    "Mardonbek uz",
-    "Mardonbek Uz",
-    "mardonbek uz",
-    "Xamidov uz",
-    "Khamidov uz",
-    "xamidov uz",
-    "khamidov uz",
-  ],
-  alternates: {
-    canonical: "https://xamidov.uz",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${COMPANY.name} — veb-sayt va ilova yaratish O‘zbekiston bo‘ylab`,
+    template: `%s | ${COMPANY.name}`,
   },
+  description: COMPANY.description,
+  applicationName: COMPANY.name,
+  authors: [{ name: FOUNDER.name, url: `${SITE_URL}/founder` }],
+  creator: FOUNDER.name,
+  publisher: COMPANY.name,
+  keywords: [...SERVICE_KEYWORDS, ...NAME_KEYWORDS],
+  category: "technology",
+  alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Mardonbek Xamidov | Portfolio",
-    description:
-      "Full-stack developer with mastery in frameworks like Next.js, Rails, and NestJS. Explore technical proficiencies here.",
-    url: "https://xamidov.com",
-    siteName: "Mardonbek Xamidov Portfolio",
-    images: [
-      {
-        url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-        width: 280,
-        height: 280,
-        type: "image/png",
-        alt: "Mardonbek Xamidov Portfolio Preview",
-      },
-    ],
+    title: `${COMPANY.name} — veb-sayt va ilova yaratish O‘zbekiston bo‘ylab`,
+    description: COMPANY.description,
+    url: SITE_URL,
+    siteName: COMPANY.name,
+    locale: "uz_UZ",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mardonbek Xamidov | Portfolio",
-    description:
-      "Welcome to the official portfolio of Mardonbek Xamidov — a Full-Stack Software Engineer specializing in high-performance web applications using Ruby on Rails, Next.js, and NestJS. Discover my work, skills, and digital journey.",
-    images: [
-      "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-    ],
+    title: `${COMPANY.name} — veb-sayt va ilova yaratish O‘zbekiston bo‘ylab`,
+    description: COMPANY.description,
   },
   robots: {
     index: true,
@@ -102,11 +72,18 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      // let Google (and AI Overviews / Gemini) show full snippets & big previews
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
   icons: {
     icon: "/icons/icon.svg",
   },
+  formatDetection: { telephone: true, email: true },
+  // Paste the code from Google Search Console here if you verify with the
+  // "HTML tag" method:  verification: { google: "xxxxxxxx" },
 };
 
 export default function RootLayout({
@@ -115,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="uz">
       <body
         className={`${geist.variable} ${grotesk.variable} ${mono.variable} antialiased`}
       >
@@ -134,6 +111,8 @@ export default function RootLayout({
             },
           }}
         />
+
+        <JsonLd data={siteGraph()} />
 
         <ScrollToTop />
 

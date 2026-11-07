@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import { SITE_URL, breadcrumbs, ids, pageMetadata } from "@/app/lib/site";
+import JsonLd from "@/app/(components)/JsonLd";
 import { MoveUpRight, Phone, Send } from "lucide-react";
 import PageHeading from "@/app/(reusable)/PageHeading";
 import { contacts, languages } from "@/app/data";
@@ -31,83 +32,31 @@ const channels = [
   })),
 ];
 
-export const metadata: Metadata = {
-  title: "Mardonbek Xamidov | Portfolio | Contacts",
+export const metadata = pageMetadata({
+  title: "Bog‘lanish — sayt yoki ilova buyurtma qilish",
   description:
-    "Let’s connect! Whether you’re looking to hire, collaborate, or just say hello, you can reach me via email, GitHub, LinkedIn, or Telegram. I'm always open to new opportunities and meaningful conversations.",
-  keywords: [
-    "Khamidov",
-    "khamidov",
-    "hamidov",
-    "Hamidov",
-    "Xamidov",
-    "xamidov",
-    "Mardonbek",
-    "mardonbek",
-    "Mardonbek Khamidov",
-    "Mardonbek Khamidov contacts",
-    "mardonbek khamidov",
-    "mardonbek khamidov contacts",
-    "Mardonbek Xamidov",
-    "Mardonbek Xamidov contacts",
-    "mardonbek xamidov",
-    "mardonbek xamidov contacts",
-    "Mardonbek Hamidov",
-    "mardonbek hamidov",
-    "sayt",
-    "portfolio",
-    "Portfolio",
-    "khamidov-porfoio",
-    "Khamidov-porfoio",
-    "Xamidov-porfoio",
-    "Mardonbek uz",
-    "Mardonbek Uz",
-    "mardonbek uz",
-    "Xamidov uz",
-    "Khamidov uz",
-    "xamidov uz",
-    "khamidov uz",
-  ],
-  alternates: {
-    canonical: "https://xamidov.uz/contacts",
+    "Sayt yoki ilova buyurtma qilish uchun bog‘laning: +998 94 820-94-82, Telegram @mardonbekxamidov, khamidov.ko@gmail.com. Xamidov & Associates — butun O‘zbekiston bo‘ylab: Toshkent, Andijon, Namangan va boshqa viloyatlar.",
+  path: "/contacts",
+});
+
+const contactGraph = [
+  {
+    "@type": "ContactPage",
+    "@id": `${SITE_URL}/contacts`,
+    url: `${SITE_URL}/contacts`,
+    name: "Xamidov & Associates bilan bog‘lanish",
+    inLanguage: "uz",
+    isPartOf: { "@id": ids.website },
+    about: { "@id": ids.org },
   },
-  openGraph: {
-    title: "Mardonbek Xamidov | Portfolio | Contacts",
-    description:
-      "Let’s connect! Whether you’re looking to hire, collaborate, or just say hello, you can reach me via email, GitHub, LinkedIn, or Telegram. I'm always open to new opportunities and meaningful conversations.",
-    url: "https://xamidov.com/contacts",
-    siteName: "Mardonbek Xamidov Portfolio",
-    images: [
-      {
-        url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-        width: 280,
-        height: 280,
-        type: "image/png",
-        alt: "Mardonbek Xamidov Portfolio Preview",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mardonbek Xamidov | Portfolio | Contacts",
-    description:
-      "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
-    images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-};
+  breadcrumbs([{ name: "Bog‘lanish", path: "/contacts" }]),
+];
 
 export default function Contacts() {
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <JsonLd data={contactGraph} />
+
       <PageHeading eyebrow="Aloqa" text="Bog'lanish" />
 
       {/* Primary channel — the phone number is the hero of this page */}
@@ -194,8 +143,12 @@ export default function Contacts() {
       {/* Practical details */}
       <section className="grid-rule sm:grid-cols-2">
         <div className="space-y-2 bg-paper p-6 sm:p-7">
-          <p className="eyebrow">Manzil</p>
-          <p className="text-title">Toshkent, O&apos;zbekiston</p>
+          <p className="eyebrow">Hudud</p>
+          <p className="text-title">Butun O&apos;zbekiston bo&apos;ylab</p>
+          <p className="text-sm text-ink-3">
+            Bosh ofis — Toshkent. Andijon, Namangan va boshqa viloyatlarda
+            hamkorlarimiz bor.
+          </p>
         </div>
 
         <div className="space-y-2 bg-paper p-6 sm:p-7">

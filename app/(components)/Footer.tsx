@@ -9,7 +9,7 @@ const marqueeItems = [
   "Xamidov & Associates",
   "Raqamli yechimlar",
   "Veb & ilova",
-  "Toshkent, UZ",
+  "Butun O‘zbekiston bo‘ylab",
 ];
 
 export default function Footer() {

@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import { FOUNDER, SITE_URL, breadcrumbs, ids, pageMetadata } from "@/app/lib/site";
+import JsonLd from "@/app/(components)/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
 import { MoveUpRight } from "lucide-react";
@@ -9,83 +10,38 @@ import IMG1 from "../../assets/album/IMG1_BG.png";
 import IMG2 from "../../assets/album/IMG2_BG.png";
 import { languages, skills } from "@/app/data";
 
-export const metadata: Metadata = {
-    title: "Mardonbek Xamidov | Portfolio | Asoschi",
-    description:
-        "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
-    keywords: [
-        "Khamidov",
-        "khamidov",
-        "hamidov",
-        "Hamidov",
-        "Xamidov",
-        "xamidov",
-        "Mardonbek",
-        "mardonbek",
-        "Mardonbek Khamidov",
-        "Mardonbek Khamidov Founder",
-        "mardonbek khamidov",
-        "mardonbek khamidov Founder",
-        "Mardonbek Xamidov",
-        "Mardonbek Xamidov Founder",
-        "mardonbek xamidov",
-        "mardonbek xamidov Founder",
-        "Mardonbek Hamidov",
-        "mardonbek hamidov",
-        "sayt",
-        "portfolio",
-        "Portfolio",
-        "khamidov-porfoio",
-        "Khamidov-porfoio",
-        "Xamidov-porfoio",
-        "Mardonbek uz",
-        "Mardonbek Uz",
-        "mardonbek uz",
-        "Xamidov uz",
-        "Khamidov uz",
-        "xamidov uz",
-        "khamidov uz",
-    ],
-    alternates: {
-        canonical: "https://xamidov.uz/founder",
-    },
-    openGraph: {
-        title: "Mardonbek Xamidov | Portfolio | Asoschi",
-        description:
-            "I'm Mardonbek Xamidov, a passionate Software Engineer from Uzbekistan with a strong background in full-stack development. I build fast, reliable, and secure web applications. Learn more about my experience, values, and the technologies I love.",
-        url: "https://xamidov.com/founder",
-        siteName: "Mardonbek Xamidov Portfolio",
-        images: [
-            {
-                url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-                width: 280,
-                height: 280,
-                type: "image/png",
-                alt: "Mardonbek Xamidov Portfolio Preview",
-            },
-        ],
-        type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Mardonbek Xamidov | Portfolio | Asoschi",
-        description:
-            "Explore the skill set of Mardonbek Xamidov – Full Stack Engineer with experience in web frameworks and scalable systems.",
-        images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
-    },
-    robots: {
-        index: true,
-        follow: true,
-        googleBot: {
-            index: true,
-            follow: true,
-        },
-    },
-};
+export const metadata = pageMetadata({
+  title: "Mardonbek Xamidov (Khamidov) — asoschi, full-stack dasturchi",
+  description:
+    "Mardonbek Xamidov (Khamidov, Хамидов) — Xamidov & Associates asoschisi, O‘zbekistonlik full-stack dasturchi. Ruby on Rails, Next.js, NestJS, React, Node.js. Tajriba, ko‘nikmalar va tillar.",
+  path: "/founder",
+  type: "profile",
+  image: {
+    url: FOUNDER.image,
+    width: 900,
+    height: 1200,
+    alt: "Mardonbek Xamidov — Xamidov & Associates asoschisi",
+  },
+});
+
+const founderGraph = [
+  {
+    "@type": "ProfilePage",
+    "@id": `${SITE_URL}/founder`,
+    url: `${SITE_URL}/founder`,
+    name: "Mardonbek Xamidov — asoschi",
+    inLanguage: "uz",
+    isPartOf: { "@id": ids.website },
+    mainEntity: { "@id": ids.person },
+  },
+  breadcrumbs([{ name: "Asoschi", path: "/founder" }]),
+];
 
 export default function Founder() {
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <JsonLd data={founderGraph} />
+
       <PageHeading eyebrow="Asoschi" text="Mardonbek Xamidov" />
 
       {/* Bio */}
@@ -93,7 +49,7 @@ export default function Founder() {
         <div className="frame lg:col-span-5">
           <Image
             src={IMG1}
-            alt="Mardonbek Xamidov"
+            alt="Mardonbek Xamidov — Xamidov &amp; Associates asoschisi"
             height={720}
             width={1280}
             sizes="(min-width: 1024px) 40vw, 100vw"
@@ -175,7 +131,7 @@ export default function Founder() {
         <div className="frame lg:col-span-5">
           <Image
             src={IMG2}
-            alt="Mardonbek Xamidov"
+            alt="Mardonbek Xamidov — Xamidov &amp; Associates asoschisi"
             height={720}
             width={1280}
             sizes="(min-width: 1024px) 40vw, 100vw"

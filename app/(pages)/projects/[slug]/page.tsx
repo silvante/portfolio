@@ -6,6 +6,8 @@ import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
 import ProjectGallery from "@/app/(components)/ProjectGallery";
 import { getProject, getProjects } from "@/app/lib/projects";
+import JsonLd from "@/app/(components)/JsonLd";
+import { SITE_URL, breadcrumbs, ids, pageMetadata } from "@/app/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -16,39 +18,21 @@ export function generateStaticParams() {
   return getProjects().map((p) => ({ slug: p.slug }));
 }
 
-const OG_FALLBACK =
-  "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true";
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = getProject(slug);
   if (!p) return {};
 
-  const title = `${p.title} | Loyihalar | Mardonbek Xamidov`;
-  const url = `https://xamidov.uz/projects/${p.slug}`;
-  const image = p.images[0]
-    ? `https://xamidov.uz${p.images[0].src}`
-    : OG_FALLBACK;
-
-  return {
-    title,
+  const cover = p.images[0];
+  return pageMetadata({
+    title: `${p.title} — ${p.category} loyihasi`,
     description: p.summary,
-    alternates: { canonical: url },
-    openGraph: {
-      title,
-      description: p.summary,
-      url,
-      siteName: "Mardonbek Xamidov Portfolio",
-      images: [{ url: image, alt: p.title }],
-      type: "article",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description: p.summary,
-      images: [image],
-    },
-  };
+    path: `/projects/${p.slug}`,
+    keywords: [p.title, p.category, ...p.stack],
+    type: "article",
+    // no screenshot yet → falls back to the site-wide share card
+    image: cover ? { url: cover.src, alt: cover.alt } : undefined,
+  });
 }
 
 export default async function ProjectDetails({ params }: Props) {
@@ -67,8 +51,39 @@ export default async function ProjectDetails({ params }: Props) {
     { label: "Muddat", value: p.duration },
   ].filter((f): f is { label: string; value: string } => Boolean(f.value));
 
+  const url = `${SITE_URL}/projects/${p.slug}`;
+  const graph = [
+    {
+      "@type": "CreativeWork",
+      "@id": `${url}#work`,
+      url,
+      name: p.title,
+      headline: p.title,
+      description: p.description,
+      abstract: p.summary,
+      genre: p.category,
+      inLanguage: "uz",
+      image: p.images.map((img) => `${SITE_URL}${img.src}`),
+      keywords: p.stack.join(", "),
+      creator: {
+        "@type": "Person",
+        name: p.author.name,
+        url: p.author.portfolio,
+      },
+      publisher: { "@id": ids.org },
+      isPartOf: { "@id": ids.website },
+      ...(p.liveUrl ? { sameAs: p.liveUrl } : {}),
+    },
+    breadcrumbs([
+      { name: "Loyihalar", path: "/projects" },
+      { name: p.title, path: `/projects/${p.slug}` },
+    ]),
+  ];
+
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <JsonLd data={graph} />
+
       <div className="space-y-8">
         <Link href="/projects" className="underline-link text-sm">
           <MoveLeft className="size-4" />

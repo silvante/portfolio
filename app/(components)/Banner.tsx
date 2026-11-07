@@ -27,8 +27,8 @@ export default function Banner() {
           </h1>
 
           <p className="lead max-w-lg">
-            Biznes uchun zamonaviy veb-saytlar, ilovalar va foydali raqamli
-            yechimlar.
+            Butun O&apos;zbekiston bo&apos;ylab biznes uchun zamonaviy
+            veb-saytlar, ilovalar va foydali raqamli yechimlar.
           </p>
 
           <div className="flex w-full flex-col items-stretch justify-center gap-3 pt-2 sm:w-auto sm:flex-row sm:items-center">

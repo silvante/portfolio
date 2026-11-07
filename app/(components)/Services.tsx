@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Globe, Smartphone, Monitor, MoveRight } from "lucide-react";
 
-const services = [
+export const services = [
   {
     icon: Globe,
     title: "Veb-saytlar",
@@ -21,7 +21,7 @@ const services = [
 
 type Tone = "light" | "soft" | "dark";
 
-const plans: {
+export const plans: {
   name: string;
   audience: string;
   price: string;

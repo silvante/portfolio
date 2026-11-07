@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import { SITE_URL, breadcrumbs, ids, pageMetadata } from "@/app/lib/site";
+import JsonLd from "@/app/(components)/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
@@ -7,79 +8,26 @@ import PageHeading from "@/app/(reusable)/PageHeading";
 import CallToAction from "@/app/(components)/CallToAction";
 import WorkflowTimeline from "@/app/(components)/WorkflowTimeline";
 
-export const metadata: Metadata = {
-  title: "Mardonbek Xamidov | Portfolio | Info",
+export const metadata = pageMetadata({
+  title: "Xamidov & Associates (X&A) haqida — raqamli yechimlar kompaniyasi",
+  absoluteTitle: true,
   description:
-    "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
-  keywords: [
-    "Khamidov",
-    "khamidov",
-    "hamidov",
-    "Hamidov",
-    "Xamidov",
-    "xamidov",
-    "Mardonbek",
-    "mardonbek",
-    "Mardonbek Khamidov",
-    "Mardonbek Khamidov info",
-    "mardonbek khamidov",
-    "mardonbek khamidov info",
-    "Mardonbek Xamidov",
-    "Mardonbek Xamidov info",
-    "mardonbek xamidov",
-    "mardonbek xamidov info",
-    "Mardonbek Hamidov",
-    "mardonbek hamidov",
-    "sayt",
-    "portfolio",
-    "Portfolio",
-    "khamidov-porfoio",
-    "Khamidov-porfoio",
-    "Xamidov-porfoio",
-    "Mardonbek uz",
-    "Mardonbek Uz",
-    "mardonbek uz",
-    "Xamidov uz",
-    "Khamidov uz",
-    "xamidov uz",
-    "khamidov uz",
-  ],
-  alternates: {
-    canonical: "https://xamidov.uz/info",
+    "Xamidov & Associates (X&A) — O‘zbekiston bo‘ylab ishlaydigan raqamli yechimlar kompaniyasi: veb-saytlar, mobil va desktop ilovalar. Toshkent, Andijon, Namangan va boshqa viloyatlarda. Tamoyillarimiz, 6 bosqichli ish jarayoni va asoschimiz Mardonbek Xamidov haqida.",
+  path: "/info",
+});
+
+const infoGraph = [
+  {
+    "@type": "AboutPage",
+    "@id": `${SITE_URL}/info`,
+    url: `${SITE_URL}/info`,
+    name: "Xamidov & Associates haqida",
+    inLanguage: "uz",
+    isPartOf: { "@id": ids.website },
+    mainEntity: { "@id": ids.org },
   },
-  openGraph: {
-    title: "Mardonbek Xamidov | Portfolio | Info",
-    description:
-      "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
-    url: "https://xamidov.com/info",
-    siteName: "Mardonbek Xamidov Portfolio",
-    images: [
-      {
-        url: "https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true",
-        width: 280,
-        height: 280,
-        type: "image/png",
-        alt: "Mardonbek Xamidov Portfolio Preview",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mardonbek Xamidov | Portfolio | Info",
-    description:
-      "Xamidov & Associates — O‘zbekistonda faoliyat yurituvchi raqamli yechimlar kompaniyasi. Veb-saytlar, mobil va desktop ilovalar hamda boshqa raqamli mahsulotlarni ishlab chiqamiz. Tamoyillarimiz: aniq qoidalar, to‘lovlarda shaffoflik va ishonch.",
-    images: ["https://github.com/silvante/portfolio/blob/main/app/assets/og_image.png?raw=true"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-};
+  breadcrumbs([{ name: "Batafsil", path: "/info" }]),
+];
 
 const principles = [
   {
@@ -132,6 +80,8 @@ const products = [
 export default function Info() {
   return (
     <div className="shell page space-y-[clamp(3rem,6vw,5rem)]">
+      <JsonLd data={infoGraph} />
+
       <PageHeading eyebrow="Biz haqimizda" text="Batafsil" />
 
       {/* Intro */}
