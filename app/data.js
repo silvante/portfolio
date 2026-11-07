@@ -159,6 +159,77 @@ export const contacts = [
   }
 ]
 
+/* ------------------------------------------------------------------
+   Projects — shown on /projects and /projects/[slug].
+
+   HOW TO ADD A PROJECT
+   1. Copy one object below and fill it in. `slug` must be unique and
+      URL-friendly (lowercase, digits, dashes): it becomes the page URL
+      → /projects/<slug>
+   2. Create the folder  app/assets/projects/<slug>/  and drop the images
+      in it (png, jpg, jpeg, webp, avif, gif, svg).
+      They are ordered by number: 1.png, 2.png, 3.png … 10.png
+      (10 comes after 9, not after 1). The first image is the cover.
+   `author` is who built it: name, portfolio link and an image (avatar) URL.
+   Optional fields can simply be left out.
+   ------------------------------------------------------------------ */
+export const projects = [
+  {
+    id: 1,
+    slug: "xamidov-portfolio", // → app/assets/projects/xamidov-portfolio/
+    title: "Xamidov & Associates",
+    category: "Veb-sayt", // Veb-sayt | Mobil ilova | Desktop ilova | Dizayn
+    author: {
+      name: "Boburov Shukurillo",
+      portfolio: "https://boburov.uz",
+      image: "https://avatars.githubusercontent.com/u/137058543?v=4",
+    },
+    client: "Shaxsiy loyiha",
+    duration: "3 hafta", // optional
+    summary:
+      "Xizmatlar, tariflar va ish jarayonini aniq ko'rsatadigan zamonaviy portfolio va biznes sayti.",
+    description:
+      "Maqsad — mijoz saytga kirgan zahoti kim bilan ishlayotganini, qanday xizmatlar borligini va narxlar qanchaligini tushunishi. Sayt telefon, planshet va kompyuterda birdek qulay ishlaydi, tez yuklanadi va qidiruv tizimlarida yaxshi ko'rinadi.",
+    features: [
+      "Barcha qurilmalarga moslashuvchan dizayn",
+      "Xizmatlar va tariflar sahifasi",
+      "Ish jarayoni bosqichma-bosqich",
+      "SEO optimizatsiya va sitemap",
+      "Tezkor yuklanish",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://xamidov.uz", // optional
+    sourceUrl: "https://github.com/silvante/portfolio", // optional
+  },
+  {
+    id: 2,
+    slug: "smalltalk", // → app/assets/projects/smalltalk/
+    title: "SmallTalk",
+    category: "Veb-sayt", // Veb-sayt | Mobil ilova | Desktop ilova | Dizayn
+    author: {
+      name: "Boburov Shukurillo",
+      portfolio: "https://boburov.uz",
+      image: "https://avatars.githubusercontent.com/u/137058543?v=4",
+    },
+    client: "Shaxsiy loyiha",
+    duration: "3 hafta", // optional
+    summary:
+        "Xizmatlar, tariflar va ish jarayonini aniq ko'rsatadigan zamonaviy portfolio va biznes sayti.",
+    description:
+        "Maqsad — mijoz saytga kirgan zahoti kim bilan ishlayotganini, qanday xizmatlar borligini va narxlar qanchaligini tushunishi. Sayt telefon, planshet va kompyuterda birdek qulay ishlaydi, tez yuklanadi va qidiruv tizimlarida yaxshi ko'rinadi.",
+    features: [
+      "Barcha qurilmalarga moslashuvchan dizayn",
+      "Xizmatlar va tariflar sahifasi",
+      "Ish jarayoni bosqichma-bosqich",
+      "SEO optimizatsiya va sitemap",
+      "Tezkor yuklanish",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://xamidov.uz", // optional
+    sourceUrl: "https://github.com/silvante/portfolio", // optional
+  },
+];
+
 export const counts = [
   {
     id: 1,
